@@ -21,7 +21,7 @@ function FeedbackScreen({ weekNumber, weekTitle, selectedOption, metrics, onCont
     loadFeedback()
   }, [weekNumber, weekTitle, selectedOption, metrics])
 
-  const isLastWeek = weekNumber >= 3
+  const isLastWeek = weekNumber >= 12
 
   return (
     <div className="feedback-screen">
