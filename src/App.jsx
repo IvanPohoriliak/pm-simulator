@@ -78,7 +78,7 @@ function App() {
   }
 
   const continueToNextWeek = () => {
-    if (currentWeek >= 3) {
+    if (currentWeek >= 12) {
       // End of available weeks, go to final review
       setCurrentScreen('final')
     } else {
