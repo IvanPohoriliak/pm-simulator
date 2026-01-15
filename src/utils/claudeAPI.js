@@ -1,6 +1,6 @@
 // Claude API Integration for PM Simulator
 
-export async function generateAIFeedback(weekNumber, weekTitle, optionId, optionTitle, metrics) {
+export async function generateAIFeedback(weekNumber, weekTitle, optionId, optionTitle, metrics, weekData, selectedOption, oldMetrics) {
   
   // Get API key from environment variable
   const CLAUDE_API_KEY = import.meta.env.VITE_CLAUDE_API_KEY;
@@ -10,32 +10,69 @@ export async function generateAIFeedback(weekNumber, weekTitle, optionId, option
     return getFallbackFeedback(weekNumber);
   }
   
-  const prompt = `You are analyzing a Project Manager's decision in a realistic simulation.
+  // Format team signals
+  const signalsText = weekData.signals
+    .map(s => `- ${s.from}: "${s.message}"`)
+    .join('\n');
+  
+  // Format other options (ones NOT chosen)
+  const otherOptions = weekData.options
+    .filter(opt => opt.id !== optionId)
+    .map(opt => `${opt.id}) ${opt.title}\n   → ${opt.consequences.immediate}`)
+    .join('\n\n');
+  
+  // Calculate deltas
+  const formatDelta = (value) => {
+    if (value > 0) return `+${value}`;
+    if (value < 0) return `${value}`;
+    return '0';
+  };
+  
+  const deltas = {
+    clientTrust: metrics.clientTrust - oldMetrics.clientTrust,
+    teamMood: metrics.teamMood - oldMetrics.teamMood,
+    techDebt: metrics.techDebt - oldMetrics.techDebt,
+    timelineRisk: metrics.timelineRisk - oldMetrics.timelineRisk
+  };
+  
+  const prompt = `You are a seasoned PM reflecting on a real project decision.
 
-Context:
-- Week ${weekNumber}/12: "${weekTitle}"
-- Decision made: Option ${optionId} - "${optionTitle}"
-- Current metrics after decision:
-  * Client Trust: ${metrics.clientTrust}/100
-  * Team Mood: ${metrics.teamMood}/100
-  * Tech Debt: ${metrics.techDebt}/100 (higher = worse)
-  * Timeline Risk: ${metrics.timelineRisk}/100 (higher = worse)
+WEEK ${weekNumber}/12: "${weekTitle}"
 
-Provide realistic, grounded PM feedback in 2-3 short paragraphs (150-200 words total):
+SITUATION:
+${weekData.context}
 
-1. What this decision accomplished (immediate benefit)
-2. What hidden cost or trade-off was created
-3. Alternative perspective or what experienced PM would consider
+TEAM SIGNALS:
+${signalsText}
+
+YOUR DECISION:
+Option ${optionId}: "${selectedOption.title}"
+→ ${selectedOption.consequences.immediate}
+
+WHAT YOU DIDN'T CHOOSE:
+${otherOptions}
+
+IMPACT:
+- Client Trust: ${oldMetrics.clientTrust} → ${metrics.clientTrust} (${formatDelta(deltas.clientTrust)})
+- Team Mood: ${oldMetrics.teamMood} → ${metrics.teamMood} (${formatDelta(deltas.teamMood)})
+- Tech Debt: ${oldMetrics.techDebt} → ${metrics.techDebt} (${formatDelta(deltas.techDebt)})
+- Timeline Risk: ${oldMetrics.timelineRisk} → ${metrics.timelineRisk} (${formatDelta(deltas.timelineRisk)})
+
+Provide grounded feedback in 2-3 paragraphs (150-200 words total):
+
+1. What this decision accomplished (why it worked or didn't)
+2. What trade-off or hidden cost exists (what you gave up vs other options)
+3. One insight an experienced PM would notice at Week ${weekNumber}/12
 
 Rules:
-- NO teaching tone ("you should have...")
-- NO generic advice ("communication is key...")
-- Speak like a experienced PM reflecting on real project
-- Emotional, honest, adult language
-- Mirror reality, don't judge
-- Reference specific project context (team, timeline, tech debt)
+- Reference SPECIFIC details from this week's situation
+- Compare to the options you DIDN'T choose
+- Tie to metrics changes (explain WHY mood/debt/risk changed)
+- NO generic advice ("communication is key")
+- Real, grounded, experienced PM voice
+- Speak as if you lived through this exact project
 
-Write naturally, as if you lived through this project.`;
+Write naturally and honestly.`;
 
   try {
     const response = await fetch('https://api.anthropic.com/v1/messages', {
