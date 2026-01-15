@@ -158,6 +158,7 @@ function App() {
           finalData={scenarioData.finalReview}
           metrics={metrics}
           decisionHistory={decisionHistory}
+          scenarioData={scenarioData}
           onRestart={restartSimulation}
         />
       )}
