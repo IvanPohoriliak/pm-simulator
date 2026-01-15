@@ -2,14 +2,6 @@
 
 export async function generateAIFeedback(weekNumber, weekTitle, optionId, optionTitle, metrics, weekData, selectedOption, oldMetrics) {
   
-  // Get API key from environment variable
-  const CLAUDE_API_KEY = import.meta.env.VITE_CLAUDE_API_KEY;
-  
-  // If no API key, return fallback feedback immediately
-  if (!CLAUDE_API_KEY) {
-    return getFallbackFeedback(weekNumber);
-  }
-  
   // Format team signals
   const signalsText = weekData.signals
     .map(s => `- ${s.from}: "${s.message}"`)
@@ -75,12 +67,10 @@ Rules:
 Write naturally and honestly.`;
 
   try {
-    const response = await fetch('https://api.anthropic.com/v1/messages', {
+    const response = await fetch('/api/claude', {
       method: 'POST',
       headers: {
-        'Content-Type': 'application/json',
-        'x-api-key': CLAUDE_API_KEY,
-        'anthropic-version': '2023-06-01'
+        'Content-Type': 'application/json'
       },
       body: JSON.stringify({
         model: 'claude-sonnet-4-20250514',
