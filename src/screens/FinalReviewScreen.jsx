@@ -4,14 +4,27 @@ import { generateFinalReview } from '../utils/claudeAPI'
 function FinalReviewScreen({ finalData, metrics, decisionHistory, scenarioData, onRestart }) {
   const [aiReview, setAiReview] = useState('')
   const [loading, setLoading] = useState(true)
+  const [isStreaming, setIsStreaming] = useState(false) // ✅ ADDED
 
   useEffect(() => {
     async function loadFinalReview() {
       setLoading(true)
-      const review = await generateFinalReview(decisionHistory, metrics, scenarioData)
-      setAiReview(review)
-      setLoading(false)
+      setIsStreaming(true) // ✅ ADDED
+      
+      // ✅ STREAMING with callback
+      await generateFinalReview(
+        decisionHistory,
+        metrics,
+        scenarioData,
+        (chunk) => {
+          setAiReview(chunk)
+          setLoading(false)
+        }
+      )
+      
+      setIsStreaming(false) // ✅ ADDED
     }
+    
     loadFinalReview()
   }, [decisionHistory, metrics, scenarioData])
 
@@ -24,13 +37,22 @@ function FinalReviewScreen({ finalData, metrics, decisionHistory, scenarioData, 
 
       <div className="final-section">
         <h3>What Happened</h3>
-        {loading ? (
+        {loading && aiReview === '' ? (
           <div className="loading-spinner">
             <div className="spinner"></div>
             <p>Generating final review...</p>
           </div>
         ) : (
-          <p className="outcome-text" style={{ whiteSpace: 'pre-line' }}>{aiReview}</p>
+          <>
+            <p className="outcome-text" style={{ whiteSpace: 'pre-line' }}>
+              {aiReview}
+            </p>
+            
+            {/* ✅ ADDED typing indicator */}
+            {isStreaming && (
+              <span className="typing-indicator">▋</span>
+            )}
+          </>
         )}
       </div>
 
@@ -102,7 +124,11 @@ function FinalReviewScreen({ finalData, metrics, decisionHistory, scenarioData, 
       </div>
 
       <div className="btn-center">
-        <button className="btn-primary" onClick={onRestart} disabled={loading}>
+        <button 
+          className="btn-primary" 
+          onClick={onRestart} 
+          disabled={loading && aiReview === ''}
+        >
           Restart Simulation
         </button>
       </div>

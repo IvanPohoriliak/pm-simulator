@@ -4,11 +4,15 @@ import { generateAIFeedback } from '../utils/claudeAPI'
 function FeedbackScreen({ weekNumber, weekTitle, selectedOption, metrics, onContinue, weekData, oldMetrics }) {
   const [feedback, setFeedback] = useState('')
   const [loading, setLoading] = useState(true)
+  const [isStreaming, setIsStreaming] = useState(false) // ✅ ADDED
 
   useEffect(() => {
     async function loadFeedback() {
       setLoading(true)
-      const result = await generateAIFeedback(
+      setIsStreaming(true) // ✅ ADDED
+      
+      // ✅ STREAMING with callback
+      await generateAIFeedback(
         weekNumber,
         weekTitle,
         selectedOption.id,
@@ -16,11 +20,16 @@ function FeedbackScreen({ weekNumber, weekTitle, selectedOption, metrics, onCont
         metrics,
         weekData,
         selectedOption,
-        oldMetrics
+        oldMetrics,
+        (chunk) => {
+          setFeedback(chunk)
+          setLoading(false)
+        }
       )
-      setFeedback(result)
-      setLoading(false)
+      
+      setIsStreaming(false) // ✅ ADDED
     }
+    
     loadFeedback()
   }, [weekNumber, weekTitle, selectedOption, metrics, weekData, oldMetrics])
 
@@ -31,12 +40,11 @@ function FeedbackScreen({ weekNumber, weekTitle, selectedOption, metrics, onCont
       <div className="feedback-content">
         <h3>AI Feedback</h3>
         
-        {loading ? (
+        {loading && feedback === '' ? (
           <div className="loading-spinner">
             <div className="spinner"></div>
             <p>Generating feedback...</p>
             
-            {/* Skip button while loading */}
             <button 
               className="btn-secondary" 
               onClick={onContinue}
@@ -46,7 +54,14 @@ function FeedbackScreen({ weekNumber, weekTitle, selectedOption, metrics, onCont
             </button>
           </div>
         ) : (
-          <p className="feedback-text">{feedback}</p>
+          <>
+            <p className="feedback-text">{feedback}</p>
+            
+            {/* ✅ ADDED typing indicator */}
+            {isStreaming && (
+              <span className="typing-indicator">▋</span>
+            )}
+          </>
         )}
       </div>
 
@@ -54,7 +69,7 @@ function FeedbackScreen({ weekNumber, weekTitle, selectedOption, metrics, onCont
         <button 
           className="btn-primary" 
           onClick={onContinue}
-          disabled={loading}
+          disabled={loading && feedback === ''}
         >
           {isLastWeek ? 'See Final Review' : `Continue to Week ${weekNumber + 1}`}
         </button>
