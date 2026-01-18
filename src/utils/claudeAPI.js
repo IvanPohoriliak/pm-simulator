@@ -1,19 +1,16 @@
-// Claude API Integration for PM Simulator
+// Claude API Integration for PM Simulator - ENGLISH
 
 export async function generateAIFeedback(weekNumber, weekTitle, optionId, optionTitle, metrics, weekData, selectedOption, oldMetrics) {
   
-  // Format team signals
   const signalsText = weekData.signals
     .map(s => `- ${s.from}: "${s.message}"`)
     .join('\n');
   
-  // Format other options (ones NOT chosen)
   const otherOptions = weekData.options
     .filter(opt => opt.id !== optionId)
     .map(opt => `${opt.id}) ${opt.title}\n   → ${opt.consequences.immediate}`)
     .join('\n\n');
   
-  // Calculate deltas
   const formatDelta = (value) => {
     if (value > 0) return `+${value}`;
     if (value < 0) return `${value}`;
@@ -99,7 +96,6 @@ Write naturally and honestly.`;
   }
 }
 
-// Fallback feedback when API unavailable
 function getFallbackFeedback(weekNumber) {
   const fallbacks = [
     `This decision moved the project forward, but like all choices, it came with trade-offs.\n\nThe immediate benefit was clear, but you've created some downstream effects that will compound over the coming weeks. Every "yes" to speed is a "no" to something else — usually stability or team capacity.\n\nAn experienced PM would weigh whether this trade-off aligns with what matters most at Week ${weekNumber} of 12. Sometimes the right decision still hurts.`,
@@ -112,10 +108,8 @@ function getFallbackFeedback(weekNumber) {
   return fallbacks[weekNumber % fallbacks.length];
 }
 
-// Generate AI-powered Final Review based on all decisions
 export async function generateFinalReview(decisionHistory, metrics, scenarioData) {
   
-  // Build decision summary
   const decisionSummary = decisionHistory.map((decision, index) => {
     const weekData = scenarioData.weeks[decision.week - 1];
     const selectedOption = weekData.options.find(opt => opt.id === decision.optionId);
@@ -189,7 +183,6 @@ Do NOT use headers or markdown. Write in flowing prose, separated by blank lines
   }
 }
 
-// Fallback final review when API unavailable
 function getFallbackFinalReview() {
   return `The MVP launched. The demo worked. Series B funding secured.
 

@@ -35,6 +35,15 @@ function FeedbackScreen({ weekNumber, weekTitle, selectedOption, metrics, onCont
           <div className="loading-spinner">
             <div className="spinner"></div>
             <p>Generating feedback...</p>
+            
+            {/* Skip button while loading */}
+            <button 
+              className="btn-secondary" 
+              onClick={onContinue}
+              style={{ marginTop: '20px' }}
+            >
+              Skip feedback →
+            </button>
           </div>
         ) : (
           <p className="feedback-text">{feedback}</p>
