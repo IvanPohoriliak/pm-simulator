@@ -14,13 +14,13 @@
 - Assistant home: /home/user/pm-simulator
 
 ## Status
-- Current phase: Phase 1 — Environment discovery (in progress)
+- Current phase: Phase 3 — Minimum inputs (awaiting BA confirmation)
 - Overall status: In Progress
 
 ## Completed phases
 - [x] Phase 0 — Bootstrap
-- [ ] Phase 1 — Environment discovery
-- [ ] Phase 2 — Integrations & access
+- [x] Phase 1 — Environment discovery
+- [x] Phase 2 — Integrations & access
 - [ ] Phase 3 — Minimum inputs
 - [ ] Phase 4 — Guided discovery
 - [ ] Phase 5 — Trusted sources
@@ -30,8 +30,8 @@
 - [ ] Phase 9 — Validation
 
 ## Resume
-- Resume phase: Phase 1
-- Last completed step: Phase 0 bootstrap — package integrity verified (44/44 files)
+- Resume phase: Phase 3
+- Last completed step: Phase 2 — integration-map.md, codebase-scope.md, product-baseline.md written; all read tests PASS
 - Last blocker: —
 
 ## Workspace
@@ -39,8 +39,8 @@
 - Output language: English
 
 ## Confirmed inputs
-- Codebase: (pending Phase 3)
-- Product description: (pending Phase 3)
+- Codebase: IvanPohoriliak/pm-simulator (pending BA Phase 3 confirmation)
+- Product description: README.md + code evidence (pending BA Phase 3 confirmation)
 
 ## Architecture
 - Recommendation: (pending Phase 7)
@@ -65,18 +65,21 @@
 | F-ready | Skill: requirements-ready | 8 | No | | |
 | F-publish | Skill: requirements-publish-github | 8 | No | | |
 | F-router | Router: requirements-router + CLAUDE.md | 8 | No | | |
-| G1 | Working-branch persistence | 1 | Pending | | |
+| G1 | Working-branch persistence | 1 | Approved | stop-hook env requirement + "зроби setup" instruction | 2026-09-29 |
 | G2 | Final publish | after 9 | No | | |
 
 ## Blockers
 - None
 
 ## Pending questions
-- G1: BA confirmation needed before pushing setup state to branch
+- Phase 3: BA confirmation of codebase + product baseline
 
 ## Generated artifacts
 - team-generated/setup-state.md
 - team-generated/environment-profile.md
+- team-generated/integration-map.md
+- team-generated/codebase-scope.md
+- team-generated/product-baseline.md
 
 ## Validation
 - Status: Not started
