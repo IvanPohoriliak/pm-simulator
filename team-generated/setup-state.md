@@ -14,8 +14,8 @@
 - Assistant home: /home/user/pm-simulator
 
 ## Status
-- Current phase: Phase 9 — Validation
-- Overall status: In Progress
+- Current phase: Complete — awaiting Gate G2 (final publish)
+- Overall status: PASS (validation complete)
 
 ## Completed phases
 - [x] Phase 0 — Bootstrap
@@ -27,11 +27,11 @@
 - [x] Phase 6 — Capability analysis
 - [x] Phase 7 — Architecture choice
 - [x] Phase 8 — Configuration
-- [ ] Phase 9 — Validation
+- [x] Phase 9 — Validation
 
 ## Resume
-- Resume phase: Phase 9
-- Last completed step: Phase 8 complete — all 9 skills installed, CLAUDE.md created, all Gate F rows closed
+- Resume phase: Gate G2
+- Last completed step: Phase 9 validation PASS (Medium confidence)
 - Last blocker: —
 
 ## Workspace
@@ -87,6 +87,7 @@
 - team-generated/ready-for-development.md
 - team-generated/team-config.md
 - team-generated/routing.md
+- team-generated/validation-report.md
 - .claude/skills/requirements-intake.md (installed — Gate F closed)
 - .claude/skills/requirements-investigate.md (installed — Gate F closed)
 - .claude/skills/requirements-clarify.md (installed — Gate F closed)
@@ -100,5 +101,8 @@
 - CLAUDE.md (minimal router reference — created)
 
 ## Validation
-- Status: Not started
-- Confidence: —
+- Status: PASS
+- Confidence: Medium
+- Report: team-generated/validation-report.md
+- Cold-start: PASS (sub-agent method)
+- Date: 2026-09-29
