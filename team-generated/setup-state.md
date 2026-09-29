@@ -14,7 +14,7 @@
 - Assistant home: /home/user/pm-simulator
 
 ## Status
-- Current phase: Phase 9 — Validation (all Gate F closed; awaiting Gate E)
+- Current phase: Complete — awaiting Gate G2 (final publish)
 - Overall status: In Progress
 
 ## Completed phases
@@ -27,11 +27,11 @@
 - [ ] Phase 6 — Capability analysis
 - [x] Phase 7 — Architecture choice
 - [x] Phase 8 — Configuration
-- [ ] Phase 9 — Validation
+- [x] Phase 9 — Validation
 
 ## Resume
-- Resume phase: Phase 9
-- Last completed step: Phase 8 complete — all 10 Gate F closures recorded 2026-09-29; awaiting Gate E (validation case)
+- Resume phase: Complete
+- Last completed step: Phase 9 validation PASS 2026-09-29; awaiting Gate G2
 - Last blocker: —
 
 ## Workspace
@@ -91,7 +91,9 @@
 - team-generated/team-config.md
 - team-generated/routing.md
 - team-generated/native/install-map.md
+- team-generated/validation-report.md
 
 ## Validation
-- Status: Not started
-- Confidence: —
+- Status: PASS
+- Confidence: Medium (current requirement case; no historical case available)
+- Report: team-generated/validation-report.md

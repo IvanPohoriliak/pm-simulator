@@ -54,4 +54,4 @@
 - Configuration: `team-generated/ready-for-development.md`
 
 ## Validation status
-- Not yet validated (setup in progress — Phase 8)
+- PASS — 2026-09-29 (Medium confidence; see team-generated/validation-report.md)
