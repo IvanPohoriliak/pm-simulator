@@ -14,7 +14,7 @@
 - Assistant home: /home/user/pm-simulator
 
 ## Status
-- Current phase: Phase 8 — Installation (Gates B/A/C/D closed)
+- Current phase: Phase 9 — Validation (all Gate F closed; awaiting Gate E)
 - Overall status: In Progress
 
 ## Completed phases
@@ -26,12 +26,12 @@
 - [ ] Phase 5 — Trusted sources
 - [ ] Phase 6 — Capability analysis
 - [x] Phase 7 — Architecture choice
-- [ ] Phase 8 — Configuration
+- [x] Phase 8 — Configuration
 - [ ] Phase 9 — Validation
 
 ## Resume
-- Resume phase: Phase 8
-- Last completed step: Phases 4-7 complete; Gates B/A/C/D closed 2026-09-29; Native architecture confirmed
+- Resume phase: Phase 9
+- Last completed step: Phase 8 complete — all 10 Gate F closures recorded 2026-09-29; awaiting Gate E (validation case)
 - Last blocker: —
 
 ## Workspace
@@ -59,11 +59,11 @@
 | F-investigate | Skill: requirements-investigate | 8 | Yes | підтверджую всі 5 | 2026-09-29 |
 | F-clarify | Skill: requirements-clarify | 8 | Yes | підтверджую всі 5 | 2026-09-29 |
 | F-specify | Skill: requirements-specify | 8 | Yes | підтверджую всі 5 | 2026-09-29 |
-| F-stories-ac | Skill: requirements-stories-ac | 8 | No | | |
-| F-quality-review | Skill: requirements-quality-review | 8 | No | | |
-| F-impact | Skill: requirements-impact | 8 | No | | |
-| F-ready | Skill: requirements-ready | 8 | No | | |
-| F-publish | Skill: requirements-publish-github | 8 | No | | |
+| F-stories-ac | Skill: requirements-stories-ac | 8 | Yes | підтверджую всі 5 | 2026-09-29 |
+| F-quality-review | Skill: requirements-quality-review | 8 | Yes | підтверджую всі 5 | 2026-09-29 |
+| F-impact | Skill: requirements-impact | 8 | Yes | підтверджую всі 5 | 2026-09-29 |
+| F-ready | Skill: requirements-ready | 8 | Yes | підтверджую всі 5 | 2026-09-29 |
+| F-publish | Skill: requirements-publish-github | 8 | Yes | підтверджую всі 5 | 2026-09-29 |
 | F-router | Router: requirements-router + CLAUDE.md | 8 | Yes | підтверджую всі 5 | 2026-09-29 |
 | G1 | Working-branch persistence | 1 | Approved | stop-hook env requirement + "зроби setup" instruction | 2026-09-29 |
 | G2 | Final publish | after 9 | No | | |

@@ -10,19 +10,19 @@
 
 | Skill file | Capability | Gate F | Status |
 |---|---|---|---|
-| .claude/skills/requirements-router.md | Router (entry point) | F-router | Pending BA confirmation |
-| .claude/skills/requirements-intake.md | Requirement intake | F-intake | Pending BA confirmation |
-| .claude/skills/requirements-investigate.md | Existing behaviour / documentation / codebase investigation | F-investigate | Pending BA confirmation |
-| .claude/skills/requirements-clarify.md | Clarification questions | F-clarify | Pending BA confirmation |
-| .claude/skills/requirements-specify.md | Requirement specification | F-specify | Pending BA confirmation |
-| .claude/skills/requirements-stories-ac.md | Stories + acceptance criteria | F-stories-ac | Pending BA confirmation |
-| .claude/skills/requirements-quality-review.md | Quality review | F-quality-review | Pending BA confirmation |
-| .claude/skills/requirements-impact.md | Impact/dependency analysis (Optional) | F-impact | Pending BA confirmation |
-| .claude/skills/requirements-ready.md | Ready for Development (Optional) | F-ready | Pending BA confirmation |
-| .claude/skills/requirements-publish-github.md | Publish to GitHub Issues (custom) | F-publish | Pending BA confirmation |
+| .claude/skills/requirements-router.md | Router (entry point) | F-router | Installed — Gate F closed 2026-09-29 |
+| .claude/skills/requirements-intake.md | Requirement intake | F-intake | Installed — Gate F closed 2026-09-29 |
+| .claude/skills/requirements-investigate.md | Existing behaviour / documentation / codebase investigation | F-investigate | Installed — Gate F closed 2026-09-29 |
+| .claude/skills/requirements-clarify.md | Clarification questions | F-clarify | Installed — Gate F closed 2026-09-29 |
+| .claude/skills/requirements-specify.md | Requirement specification | F-specify | Installed — Gate F closed 2026-09-29 |
+| .claude/skills/requirements-stories-ac.md | Stories + acceptance criteria | F-stories-ac | Installed — Gate F closed 2026-09-29 |
+| .claude/skills/requirements-quality-review.md | Quality review | F-quality-review | Installed — Gate F closed 2026-09-29 |
+| .claude/skills/requirements-impact.md | Impact/dependency analysis (Optional) | F-impact | Installed — Gate F closed 2026-09-29 |
+| .claude/skills/requirements-ready.md | Ready for Development (Optional) | F-ready | Installed — Gate F closed 2026-09-29 |
+| .claude/skills/requirements-publish-github.md | Publish to GitHub Issues (custom) | F-publish | Installed — Gate F closed 2026-09-29 |
 
 ## CLAUDE.md entry point
 - Updated: Yes — references requirements-router.md
 
 ## Verification
-- Status: Pending Phase 8 completion
+- Status: All Gate F closed — proceeding to Phase 9 verification + validation
