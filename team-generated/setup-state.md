@@ -14,7 +14,7 @@
 - Assistant home: /home/user/pm-simulator
 
 ## Status
-- Current phase: Phase 8 — Configuration (in progress, Gate F batch 1 closed)
+- Current phase: Phase 9 — Validation
 - Overall status: In Progress
 
 ## Completed phases
@@ -26,12 +26,12 @@
 - [x] Phase 5 — Trusted sources
 - [x] Phase 6 — Capability analysis
 - [x] Phase 7 — Architecture choice
-- [ ] Phase 8 — Configuration (in progress)
+- [x] Phase 8 — Configuration
 - [ ] Phase 9 — Validation
 
 ## Resume
-- Resume phase: Phase 8
-- Last completed step: Gate F batch 1 closed (intake, investigate, clarify); skills 1–3 installed
+- Resume phase: Phase 9
+- Last completed step: Phase 8 complete — all 9 skills installed, CLAUDE.md created, all Gate F rows closed
 - Last blocker: —
 
 ## Workspace
@@ -58,12 +58,13 @@
 | F-intake | Skill: requirements-intake | 8 | Yes | "yes to all three" | 2026-09-29 |
 | F-investigate | Skill: requirements-investigate | 8 | Yes | "yes to all three" | 2026-09-29 |
 | F-clarify | Skill: requirements-clarify | 8 | Yes | "yes to all three" | 2026-09-29 |
-| F-specify | Skill: requirements-specify | 8 | Pending | | |
-| F-stories-ac | Skill: requirements-stories-ac | 8 | Pending | | |
-| F-quality-review | Skill: requirements-quality-review | 8 | Pending | | |
-| F-impact | Skill: requirements-impact | 8 | Pending | | |
-| F-ready | Skill: requirements-ready | 8 | Pending | | |
-| F-publish | Skill: requirements-publish-github | 8 | Pending | | |
+| F-specify | Skill: requirements-specify | 8 | Yes | "yes" | 2026-09-29 |
+| F-stories-ac | Skill: requirements-stories-ac | 8 | Yes | "yes" | 2026-09-29 |
+| F-quality-review | Skill: requirements-quality-review | 8 | Yes | "yes" | 2026-09-29 |
+| F-impact | Skill: requirements-impact | 8 | Yes | "yes" | 2026-09-29 |
+| F-ready | Skill: requirements-ready | 8 | Yes | "yes" | 2026-09-29 |
+| F-publish | Skill: requirements-publish-github | 8 | Yes | "yes" | 2026-09-29 |
+| F-router | Router: requirements-router + CLAUDE.md | 8 | Yes | "yes" | 2026-09-29 |
 | G1 | Working-branch persistence | 1 | Approved | "так" | 2026-09-29 |
 | G2 | Final publish | after 9 | No | | |
 
@@ -89,6 +90,14 @@
 - .claude/skills/requirements-intake.md (installed — Gate F closed)
 - .claude/skills/requirements-investigate.md (installed — Gate F closed)
 - .claude/skills/requirements-clarify.md (installed — Gate F closed)
+- .claude/skills/requirements-specify.md (installed — Gate F closed)
+- .claude/skills/requirements-stories-ac.md (installed — Gate F closed)
+- .claude/skills/requirements-quality-review.md (installed — Gate F closed)
+- .claude/skills/requirements-impact.md (installed — Gate F closed)
+- .claude/skills/requirements-ready.md (installed — Gate F closed)
+- .claude/skills/requirements-publish-github.md (installed — Gate F closed)
+- .claude/skills/requirements-router.md (installed — Gate F closed)
+- CLAUDE.md (minimal router reference — created)
 
 ## Validation
 - Status: Not started
