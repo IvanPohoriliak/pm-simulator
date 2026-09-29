@@ -66,7 +66,7 @@
 | F-publish | Skill: requirements-publish-github | 8 | Yes | підтверджую всі 5 | 2026-09-29 |
 | F-router | Router: requirements-router + CLAUDE.md | 8 | Yes | підтверджую всі 5 | 2026-09-29 |
 | G1 | Working-branch persistence | 1 | Approved | stop-hook env requirement + "зроби setup" instruction | 2026-09-29 |
-| G2 | Final publish | after 9 | No | | |
+| G2 | Final publish | after 9 | Yes | так, merge в main | 2026-09-29 |
 
 ## Blockers
 - None
