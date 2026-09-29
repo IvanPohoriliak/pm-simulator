@@ -55,16 +55,16 @@
 | C | Capability Scope | 6 | Yes | підтверджую | 2026-09-29 |
 | D | Architecture Choice | 7 | Yes | підтверджую | 2026-09-29 |
 | E | Validation Input | 9 | No | | |
-| F-intake | Skill: requirements-intake | 8 | No | | |
-| F-investigate | Skill: requirements-investigate | 8 | No | | |
-| F-clarify | Skill: requirements-clarify | 8 | No | | |
-| F-specify | Skill: requirements-specify | 8 | No | | |
+| F-intake | Skill: requirements-intake | 8 | Yes | підтверджую всі 5 | 2026-09-29 |
+| F-investigate | Skill: requirements-investigate | 8 | Yes | підтверджую всі 5 | 2026-09-29 |
+| F-clarify | Skill: requirements-clarify | 8 | Yes | підтверджую всі 5 | 2026-09-29 |
+| F-specify | Skill: requirements-specify | 8 | Yes | підтверджую всі 5 | 2026-09-29 |
 | F-stories-ac | Skill: requirements-stories-ac | 8 | No | | |
 | F-quality-review | Skill: requirements-quality-review | 8 | No | | |
 | F-impact | Skill: requirements-impact | 8 | No | | |
 | F-ready | Skill: requirements-ready | 8 | No | | |
 | F-publish | Skill: requirements-publish-github | 8 | No | | |
-| F-router | Router: requirements-router + CLAUDE.md | 8 | No | | |
+| F-router | Router: requirements-router + CLAUDE.md | 8 | Yes | підтверджую всі 5 | 2026-09-29 |
 | G1 | Working-branch persistence | 1 | Approved | stop-hook env requirement + "зроби setup" instruction | 2026-09-29 |
 | G2 | Final publish | after 9 | No | | |
 
