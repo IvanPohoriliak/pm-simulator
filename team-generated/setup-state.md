@@ -14,24 +14,24 @@
 - Assistant home: /home/user/pm-simulator
 
 ## Status
-- Current phase: Phase 2 — Source systems and integration setup
+- Current phase: Phase 8 — Configuration (in progress, Gate F batch 1 closed)
 - Overall status: In Progress
 
 ## Completed phases
 - [x] Phase 0 — Bootstrap
 - [x] Phase 1 — Environment discovery
-- [ ] Phase 2 — Integrations & access
-- [ ] Phase 3 — Minimum inputs
-- [ ] Phase 4 — Guided discovery
-- [ ] Phase 5 — Trusted sources
-- [ ] Phase 6 — Capability analysis
-- [ ] Phase 7 — Architecture choice
-- [ ] Phase 8 — Configuration
+- [x] Phase 2 — Integrations & access
+- [x] Phase 3 — Minimum inputs
+- [x] Phase 4 — Guided discovery
+- [x] Phase 5 — Trusted sources
+- [x] Phase 6 — Capability analysis
+- [x] Phase 7 — Architecture choice
+- [ ] Phase 8 — Configuration (in progress)
 - [ ] Phase 9 — Validation
 
 ## Resume
-- Resume phase: Phase 2
-- Last completed step: Phase 1 — environment-profile.md written
+- Resume phase: Phase 8
+- Last completed step: Gate F batch 1 closed (intake, investigate, clarify); skills 1–3 installed
 - Last blocker: —
 
 ## Workspace
@@ -39,35 +39,56 @@
 - Output language: English
 
 ## Confirmed inputs
-- Codebase: (pending — Phase 3)
-- Product description: (pending — Phase 3)
+- Codebase: IvanPohoriliak/pm-simulator (GitHub + local clone)
+- Product description: README.md (confirmed Phase 3; "3 weeks" outdated — 12 weeks implemented)
 
 ## Architecture
-- Recommendation: (pending — Phase 7)
-- Human choice: (pending — Phase 7)
+- Recommendation: Native
+- Human choice: Native (Gate D closed 2026-09-29)
 
 ## Gate Ledger
 
 | Gate ID | Name | Phase | Closed? | Verbatim BA text | When |
 |---|---|---|---|---|---|
-| A | Source Authority | 5 | No | | |
-| B | Discovery Checkpoint | 4 | No | | |
-| C | Capability Scope | 6 | No | | |
-| D | Architecture Choice | 7 | No | | |
+| A | Source Authority | 5 | Yes | "підтверджую" | 2026-09-29 |
+| B | Discovery Checkpoint | 4 | Yes | "підтверджую" | 2026-09-29 |
+| C | Capability Scope | 6 | Yes | "підтверджую" | 2026-09-29 |
+| D | Architecture Choice | 7 | Yes | "native" | 2026-09-29 |
 | E | Validation Input | 9 | No | | |
-| F | Skill Content Sign-off | 8/9 | No (one row per skill) | | |
+| F-intake | Skill: requirements-intake | 8 | Yes | "yes to all three" | 2026-09-29 |
+| F-investigate | Skill: requirements-investigate | 8 | Yes | "yes to all three" | 2026-09-29 |
+| F-clarify | Skill: requirements-clarify | 8 | Yes | "yes to all three" | 2026-09-29 |
+| F-specify | Skill: requirements-specify | 8 | Pending | | |
+| F-stories-ac | Skill: requirements-stories-ac | 8 | Pending | | |
+| F-quality-review | Skill: requirements-quality-review | 8 | Pending | | |
+| F-impact | Skill: requirements-impact | 8 | Pending | | |
+| F-ready | Skill: requirements-ready | 8 | Pending | | |
+| F-publish | Skill: requirements-publish-github | 8 | Pending | | |
 | G1 | Working-branch persistence | 1 | Approved | "так" | 2026-09-29 |
 | G2 | Final publish | after 9 | No | | |
 
 ## Blockers
 - None
 
-## Pending questions
-- Phase 2: Where are requirements/work items tracked? Any other project sources?
-
 ## Generated artifacts
 - team-generated/setup-state.md
 - team-generated/environment-profile.md
+- team-generated/integration-map.md
+- team-generated/codebase-scope.md
+- team-generated/product-baseline.md
+- team-generated/team-discovery.md
+- team-generated/trusted-sources.md
+- team-generated/capability-profile.md
+- team-generated/architecture-recommendation.md
+- team-generated/workflow-gates.md
+- team-generated/runtime-contract.md
+- team-generated/requirements-rules.md
+- team-generated/ready-for-development.md
+- team-generated/team-config.md
+- team-generated/routing.md
+- .claude/skills/requirements-intake.md (installed — Gate F closed)
+- .claude/skills/requirements-investigate.md (installed — Gate F closed)
+- .claude/skills/requirements-clarify.md (installed — Gate F closed)
 
 ## Validation
 - Status: Not started
