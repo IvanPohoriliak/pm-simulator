@@ -16,5 +16,5 @@
 ## Provenance
 - Baseline source: https://github.com/IvanPohoriliak/pm-simulator/blob/main/README.md (execution copy in local clone)
 - Supporting sources: QUICKSTART.md (setup/deployment guide)
-- Confirmed by BA: No — pending Phase 3 confirmation
-- Confirmation notes: Derived from README.md; BA must confirm or adjust before Phase 3 exit
+- Confirmed by BA: Yes
+- Confirmation notes: Confirmed by BA on 2026-09-29 (Phase 3). Verbatim: "підтверджую"
