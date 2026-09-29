@@ -4,27 +4,27 @@
 - Recommended: **Native**
 
 ## Functional reasons
-- Solo project with low workflow complexity — BMAD's multi-agent/multi-role orchestration provides no practical benefit
-- No UX investigation or architecture consultation needed (BMAD's main differentiators vs. Native)
-- All 7 Required capabilities have Native building blocks; the one capability without a building block (GitHub Issues publish) requires a new skill regardless of provider
-- Simple linear workflow: intake → investigate → clarify → specify → stories/AC → quality check → publish; no branching orchestration needed
-- Primary goal is requirements work up to Ready for Development — exactly the Native sweet spot
+- Solo PM project with a simple linear requirements workflow (intake → investigate → clarify → spec → stories/AC → quality → publish)
+- No UX or architecture consultation roles — those capabilities are Not needed
+- No multi-agent orchestration benefit: one BA, one workflow
+- All 7 Required capabilities have Native building blocks; only Publish to GitHub Issues needs a newly drafted custom skill (same for BMAD)
+- Lightweight scoped skills are a better fit than a full planning framework for this use case
 
 ## Technical feasibility
-- Environment support: Claude Code — Native adapter is Verified (defined in ENVIRONMENT-ADAPTERS.md)
-- Installation/configuration feasibility: High — scoped project skills install without external approvals
-- Existing setup conflicts: None (no existing CLAUDE.md, no existing .claude/ directory)
-- Known limitations: ASSISTANT_HOME is a shared development repo, not a dedicated requirements workspace. Native will install scoped skills under `.claude/skills/` to avoid making requirements instructions always-on for all Claude Code tasks in this repo. CLAUDE.md will be created only with a minimal reference to the Requirements Assistant, not full always-on instructions.
+- Environment support: Claude Code (cloud/remote) with CLAUDE.md + .claude/skills/ — fully supported per ENVIRONMENT-ADAPTERS.md
+- Installation/configuration feasibility: Fully automated; no manual steps required
+- Existing setup conflicts: None (existing v3.9 skills will be replaced by this v3.10 fresh setup)
+- Known limitations: None
 
 ## Footprint
-- What gets added: ~10 scoped skill files under `.claude/skills/requirements-*/`, one CLAUDE.md (minimal router reference), and `team-generated/` artifacts already in place. Total: approximately 10–12 files, one-time.
-- Side effects: No unrelated capabilities installed. No framework added. Each file corresponds directly to an enabled capability.
+- What gets added: ~10 skill files in .claude/skills/ + CLAUDE.md entry point + 16 team-generated configuration files. No framework installed.
+- Side effects: No unrelated capabilities installed. Only the capabilities confirmed in the capability profile are added.
 
 ## Alternative
 - Option: BMAD-based
-- Main tradeoff: Installs the full BMAD framework (potentially hundreds of files) to gain capabilities (UX, architecture orchestration, multi-agent planning) that are explicitly Not Needed for this solo project. No functional advantage for PM Simulator's confirmed capability set.
+- Main tradeoff: BMAD installs a larger framework (~hundreds of files module-wide) for a solo project that needs only linear requirements workflow. No UX/architecture orchestration is needed, so BMAD's multi-agent value would not be realized. Unrelated BMAD capabilities would be installed on disk even if unused.
 
 ## Human choice
-- Chosen architecture: Native
-- Decision: "native"
-- Date/context: BA, 2026-09-29 (Gate D)
+- Chosen architecture: (pending Gate D)
+- Decision: —
+- Date/context: —

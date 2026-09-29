@@ -14,14 +14,14 @@
 - Assistant home: /home/user/pm-simulator
 
 ## Status
-- Current phase: Phase 3 — Minimum inputs (awaiting BA confirmation)
+- Current phase: Phase 7 — Architecture (awaiting Gates B/A/C/D)
 - Overall status: In Progress
 
 ## Completed phases
 - [x] Phase 0 — Bootstrap
 - [x] Phase 1 — Environment discovery
 - [x] Phase 2 — Integrations & access
-- [ ] Phase 3 — Minimum inputs
+- [x] Phase 3 — Minimum inputs
 - [ ] Phase 4 — Guided discovery
 - [ ] Phase 5 — Trusted sources
 - [ ] Phase 6 — Capability analysis
@@ -30,8 +30,8 @@
 - [ ] Phase 9 — Validation
 
 ## Resume
-- Resume phase: Phase 3
-- Last completed step: Phase 2 — integration-map.md, codebase-scope.md, product-baseline.md written; all read tests PASS
+- Resume phase: Phase 7
+- Last completed step: Phase 3 confirmed by BA; Phases 4-7 artifacts drafted — awaiting Gates B/A/C/D
 - Last blocker: —
 
 ## Workspace
@@ -39,8 +39,8 @@
 - Output language: English
 
 ## Confirmed inputs
-- Codebase: IvanPohoriliak/pm-simulator (pending BA Phase 3 confirmation)
-- Product description: README.md + code evidence (pending BA Phase 3 confirmation)
+- Codebase: IvanPohoriliak/pm-simulator (confirmed by BA 2026-09-29)
+- Product description: README.md (business intent) + code (implementation); conflict known (3 vs 12 weeks)
 
 ## Architecture
 - Recommendation: (pending Phase 7)
@@ -72,7 +72,7 @@
 - None
 
 ## Pending questions
-- Phase 3: BA confirmation of codebase + product baseline
+- Gates B, A, C, D: awaiting BA consolidated confirmation
 
 ## Generated artifacts
 - team-generated/setup-state.md
@@ -80,6 +80,11 @@
 - team-generated/integration-map.md
 - team-generated/codebase-scope.md
 - team-generated/product-baseline.md
+- team-generated/team-discovery.md
+- team-generated/workflow-gates.md
+- team-generated/trusted-sources.md (pending Gate A)
+- team-generated/capability-profile.md (pending Gate C)
+- team-generated/architecture-recommendation.md (pending Gate D)
 
 ## Validation
 - Status: Not started
