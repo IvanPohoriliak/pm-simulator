@@ -25,6 +25,6 @@
 - Main tradeoff: Installs the full BMAD framework (potentially hundreds of files) to gain capabilities (UX, architecture orchestration, multi-agent planning) that are explicitly Not Needed for this solo project. No functional advantage for PM Simulator's confirmed capability set.
 
 ## Human choice
-- Chosen architecture: (pending Gate D)
-- Decision: —
-- Date/context: —
+- Chosen architecture: Native
+- Decision: "native"
+- Date/context: BA, 2026-09-29 (Gate D)
