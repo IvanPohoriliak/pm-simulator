@@ -18,9 +18,7 @@
 
 ## Note on Publish to work management
 
-The INSTALL.md building-block map shows "none" for this capability in both Native and BMAD providers. It can be enabled only as a **newly drafted skill** that goes through Gate F sign-off and validation like any other. The draft skill would use the GitHub MCP tools available in this environment to create/update GitHub Issues, with every write behind a BA working checkpoint.
-
-This will be flagged at Gate C for explicit BA decision before drafting.
+The INSTALL.md building-block map shows "none" for this capability in both Native and BMAD providers. It can be enabled only as a **newly drafted skill** that goes through Gate F sign-off and validation like any other. The draft skill will use the GitHub MCP tools available in this environment to create/update GitHub Issues, with every write behind a BA working checkpoint.
 
 ## Status semantics
 

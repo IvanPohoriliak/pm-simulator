@@ -1,57 +1,65 @@
 # Validation Report
 
 ## Summary
-- Date: 2026-09-29
-- Architecture/provider: Native (.claude/skills/)
-- Validation case: "Add statistics for monitoring the progress with test passing" (BA-supplied current requirement)
-- Final status: **PASS**
-- Validation confidence: **Medium** (one current requirement used; no historical cases available — per protocol, confidence capped at Medium)
+- **Date:** 2026-09-29
+- **Package version:** MVP-v3.10
+- **Architecture:** Native (CLAUDE.md + .claude/skills/)
+- **Final status:** PASS
+- **Validation confidence:** Medium (single current requirement case; no historical case available)
 
 ---
 
 ## Step 0 — Cold-start installation test
 
-**Method:** Sub-agent spawned with no setup conversation context; tasked with reading installed files only and simulating a BA invocation.
+**Method:** Sub-agent (did not inherit setup conversation history)
 
-**Checks:**
+**Test prompt used:** "I want to add a weekly progress page that shows which scenarios were completed each week, with scores and recommendations."
+
+**Results:**
 
 | Check | Result |
 |---|---|
-| CLAUDE.md found and readable | PASS |
-| .claude/skills/requirements-router.md found | PASS |
-| team-generated/team-config.md found | PASS |
-| team-generated/routing.md found | PASS |
-| team-generated/runtime-contract.md found | PASS |
-| team-generated/trusted-sources.md found | PASS |
-| All 10 router startup files present | PASS |
-| All 10 skill files present | PASS |
-| No broken cross-references | PASS |
-| No competing routes | PASS |
-| No dependency on setup conversation or Accelerator source folder | PASS |
+| Router discoverable from CLAUDE.md alone | PASS |
+| All 10 team-generated runtime files readable | PASS |
+| No Accelerator /tmp/ path dependencies at runtime | PASS |
+| No competing routers | PASS |
+| Correct skill invoked for test prompt | PASS — requirements-intake.md |
+| First action correct | PASS — produce intake summary, stop for BA approval |
 
-**Cold-start result: PASS**
+**Overall cold-start result:** PASS
+
+**Issue found:** setup-state.md contains a historical /tmp/ path (Accelerator source location at setup time). This file is outside the router's Startup read list and poses no runtime risk. No action required.
 
 ---
 
-## Step 1 — Validation case
+## Validation case
 
-**Case supplied by:** BA (Gate E, 2026-09-29)
-**Input:** "Add statistics for monitoring the progress with test passing"
-**Historical reference:** None available (0 existing GitHub Issues). Current requirement used — confidence capped at Medium per protocol.
+**Source:** Current requirement supplied by BA (Gate E — 2026-09-29)
+
+**Input:** "I want to add a page that will show weekly progress through scenarios — which scenarios were completed, scores and recommendations per week."
+
+**BA decisions captured during run:**
+- Progress page accessible at end of Week 12 only
+- "Scores" = 4 metrics (clientTrust, teamMood, techDebt, timelineRisk)
+- AI feedback text to be stored during play (not regenerated)
+
+**Confidence note:** No historical requirement with known outcome was available. Confidence is Medium rather than High as a result.
 
 ---
 
-## Step 2 — Execution trace
+## Step 2 — Run results
 
-| Stage | Skill invoked | BA checkpoint fired? | BA response |
+| Stage | Exercised | BA checkpoint fired | Notes |
 |---|---|---|---|
-| Intake | requirements-intake | Yes — stopped for BA review | "it's fine, move on" |
-| Investigation | requirements-investigate | No (automatic) | — |
-| Clarification | requirements-clarify | No (automatic) | BA answered Q1, Q2, Q3 |
-| Specification | requirements-specify | Yes — stopped for BA review | "confirm" |
-| Stories & AC | requirements-stories-ac | Yes — stopped for BA review | "approve" |
-| Quality review | requirements-quality-review | No (automatic) | — |
-| Ready check | requirements-ready | No (automatic) | — |
+| Intake | Yes | Yes — BA answered 3 blocking questions | Correct |
+| Investigation | Yes | No (checkpoint off per workflow-gates.md) | Correct |
+| Clarification | Yes (blocking questions in intake) | N/A | Correct |
+| Specification | Yes | Yes — BA approved ("ok, move on") | Correct |
+| Stories/AC | Yes | Yes — BA approved ("ok, go ahead") | Correct |
+| Quality review | Yes | No (checkpoint off per workflow-gates.md) | Correct |
+| Impact analysis | Yes | No | Correct |
+| Ready for Development | Yes | No | Correct |
+| Publish to GitHub Issues | Yes (dry run shown + BA approved → real write) | Yes — BA approved per-issue | Issue #2 created |
 
 ---
 
@@ -59,74 +67,64 @@
 
 | Dimension | Result | Notes |
 |---|---|---|
-| Understands the product correctly | PASS | Correctly identified scenario-data.json, App.jsx metrics, week structure, FinalReviewScreen |
-| Uses only confirmed trusted sources | PASS | Only README.md, App.jsx, FinalReviewScreen.jsx, BA answers used |
-| Identifies source conflicts | PASS | README "3 weeks" vs 12-week implementation surfaced |
-| Avoids invented facts | PASS | All unknowns labelled; no invented business decisions |
-| Identifies current/existing behaviour | PASS | Missing per-week metric history identified from code |
-| Identifies dependencies and affected areas | PASS | App.jsx state, makeDecision(), FinalReviewScreen, new screen component all identified |
-| Asks useful clarification questions | PASS | 4 targeted questions; Q1 and Q2 unblocked the spec |
-| Follows team requirement structure | PASS | GitHub Issue structure (title, description, AC) used throughout |
-| Produces testable acceptance criteria | PASS | All AC in Given/When/Then; testable |
-| Applies team quality rules | PASS | No invented facts, sources cited, assumptions labelled |
-| Does not invent READY/NOT READY verdict | PASS | Correctly stated "FORMAL READINESS CRITERIA NOT DEFINED" |
-| Uses expected routing | PASS | Router → intake → investigate → clarify → specify → stories/AC → quality-review → ready |
-| BA working checkpoints fired correctly | PASS | Stopped after intake, spec, stories/AC; waited for explicit BA approval each time |
+| Understands the product correctly | PASS | Correctly identified 12-week simulation, 4 metrics, scenario-data.json structure |
+| Uses only confirmed trusted sources | PASS | All findings cited to App.jsx, FeedbackScreen.jsx, scenario-data.json with line numbers |
+| Identifies source conflicts instead of hiding them | PASS | README "3 weeks" vs 12-week implementation conflict referenced; no conflict present in this case |
+| Avoids invented facts | PASS | No fabricated behaviour claimed; unknowns labelled as unknowns |
+| Identifies current/existing behaviour when relevant | PASS | Correctly found decisionHistory gap, feedback storage gap, missing scenarioData prop |
+| Identifies dependencies and affected areas | PASS | Impact analysis identified FinalReviewScreen prop gap and skip-path callback risk |
+| Asks useful clarification questions | PASS | 3 blocking questions, all directly relevant, all answered by BA |
+| Follows team requirement structure | PASS | Spec sections, Given/When/Then AC, finding levels all match configured rules |
+| Produces testable acceptance criteria | PASS | All AC clauses are verifiable |
+| Applies team quality rules | PASS | W1 (skip-path gap) and W2 (redundant AC) correctly flagged; no invented DoR verdict |
+| Does not invent READY/NOT READY verdict | PASS | Correctly stated FORMAL READINESS CRITERIA NOT DEFINED |
+| Uses expected integration/provider route | PASS | GitHub MCP tools used for issue creation; BA approval obtained before write |
 
 ---
 
 ## Step 4 — BA feedback
 
-| Output | BA mark | Notes |
-|---|---|---|
-| Intake summary | Correct | "it's fine, move on" |
-| Investigation findings | (not separately reviewed — BA proceeded) | — |
-| Clarification questions | Correct | BA answered Q1–Q3 |
-| Specification draft | Correct | "confirm" |
-| Stories & AC | Correct | "approve" |
+| Output | BA verdict |
+|---|---|
+| Intake summary | Approved (answered blocking questions) |
+| Spec draft | Approved — "ok, move on" |
+| Stories/AC draft | Approved — "ok, go ahead" |
+| Issue #2 text | Approved — "approve it" |
 
 ---
 
 ## Step 5 — Corrections made
 
-None required. No critical or warning findings from quality review.
+None required. No critical failures found during run.
+
+---
+
+## Per-capability table
+
+| Capability | Profile status | Validation status |
+|---|---|---|
+| Requirement intake/structuring | Required | Exercised (real) |
+| Existing behaviour investigation | Required | Exercised (real) |
+| Documentation investigation | Required | Exercised (real) |
+| Codebase investigation | Required | Exercised (real) |
+| Clarification questions | Required | Exercised (real) |
+| Requirement specification | Required | Exercised (real) |
+| Stories + acceptance criteria | Required | Exercised (real) |
+| Quality review | Required | Exercised (real) |
+| Publish to GitHub Issues | Required | Exercised (dry run — external write) |
+| Impact/dependency analysis | Optional | Exercised (real) |
+| Ready for Development assessment | Optional | Exercised (real) |
 
 ---
 
 ## Remaining non-critical gaps
 
-1. Visual format for metric display (chart/table/bars) — design decision deferred to BA; non-blocking.
-2. Navigation flow (Statistics Screen placement) — assumption made (via FinalReviewScreen button); non-blocking.
-3. No historical requirements available for comparison — confidence capped at Medium.
+- **Validation confidence is Medium** — no historical requirement with known outcome was available; a future validation run with a historical case would upgrade confidence to High.
+- **W1 (skip-path callback)** — AC clause in Story 2 should be tightened before implementation. Not a setup issue; noted for implementation.
+- **W2 (redundant AC clause)** — minor; can be cleaned up when Story 3 is refined.
 
 ---
 
-## Capabilities exercised
+## Final verdict
 
-| Capability | Exercised? |
-|---|---|
-| Requirement intake/structuring | Yes |
-| Existing behaviour investigation | Yes |
-| Documentation investigation | Yes (README.md referenced) |
-| Codebase investigation | Yes (App.jsx, FinalReviewScreen.jsx) |
-| Clarification questions | Yes |
-| Requirement specification | Yes |
-| Stories + acceptance criteria | Yes |
-| Quality review | Yes |
-| Ready for Development | Yes |
-| Impact / dependency analysis | Not exercised (optional — BA did not request it for this case) |
-| Publish to GitHub Issues | Not exercised (validation safety — publishing disabled during validation) |
-
-**Unexercised capabilities:** impact-analysis (optional), publish-github-issues (disabled during validation per protocol).
-Confidence for those two capabilities: Low (not exercised this run).
-
----
-
-## Final status
-
-- **Overall: PASS**
-- **Confidence: Medium** (current requirement used; no historical baseline; two optional capabilities not exercised)
-- Cold-start test: PASS (sub-agent method)
-- All Required capabilities exercised: Yes
-- BA working checkpoints: Fired correctly at all 3 configured points
-- No critical setup issues preventing real use (BA confirmed via approvals)
+**PASS** — cold-start test passed; all Required and Optional capabilities exercised; BA working checkpoints stopped and waited correctly; no critical factual errors; trusted sources respected; no invented DoR verdict; publish route used correctly with per-issue BA approval.

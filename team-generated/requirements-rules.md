@@ -1,7 +1,7 @@
 # Requirements Rules
 
 ## Status
-- Team-specific rules confirmed: No
+- Team-specific rules confirmed: Partial (baseline Accelerator rules + team-confirmed rules below)
 
 ## Accelerator baseline rules
 
@@ -22,26 +22,28 @@
 
 | Rule | Applies to | Blocking? | Source / human decision |
 |---|---|---|---|
-| Not defined | — | — | — |
+| Code wins over README.md for current behaviour when they conflict | All investigation, specification | Yes | Product baseline conflict confirmed by BA 2026-09-29 |
+| No batch-create of GitHub Issues — one issue = one BA approval | Publish | Yes | Workflow gates confirmed by BA 2026-09-29 |
+| Output language: English | All BA-facing outputs | Yes | Team discovery confirmed by BA 2026-09-29 |
 
 ## Requirement-type rules
 
 | Requirement type | Required structure/template | Acceptance criteria style | Additional rules | Source |
 |---|---|---|---|---|
-| GitHub Issue | Title + description + acceptance criteria | Testable Given/When/Then or checklist | — | BA confirmed (Gate B) |
+| User story | Title + Description + Acceptance Criteria | Given/When/Then | None additional | Team discovery |
 
 ## Terminology / conventions
 
 | Term / convention | Meaning / usage | Source |
 |---|---|---|
-| BA | The solo product owner / requirements author for PM Simulator | BA, 2026-09-29 |
-| Week | One simulation week in PM Simulator (1–12) | scenario-data.json |
-| Scenario | A named simulation run (only one: "Subflow") | scenario-data.json |
-| Metric | One of: clientTrust, teamMood, techDebt, timelineRisk | App.jsx |
+| PM Simulator | The product — an interactive project management simulation game | README.md |
+| Week | Simulation week (1–12) — not a calendar week | Codebase (App.jsx) |
+| CSAT / Velocity / Scope / Burn Rate | The four simulation metrics tracked per week | Codebase (metrics logic) |
+| Scenario | A structured challenge event in the simulation | scenario-data.json |
 
 ## Explicit exclusions
 
-- The Assistant must not set or change priority, estimates, or release commitments.
-- The Assistant must not publish GitHub Issues without explicit BA approval per issue.
-- The Assistant must not invent UX design decisions (solo BA makes all UI choices).
-- The Assistant must not invent architecture decisions (solo BA makes all architecture choices).
+- Do not set or change story points, estimates, sprint assignments, or priority without explicit BA decision.
+- Do not mark any item Ready for Development — no formal DoR is defined; the quality-review skill reports gaps but issues no formal verdict.
+- Do not create or modify GitHub Issues without explicit per-issue BA approval.
+- Do not rely on README.md as authoritative for current implementation behaviour (use codebase instead).

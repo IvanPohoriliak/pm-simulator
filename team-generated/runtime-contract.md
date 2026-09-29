@@ -1,7 +1,5 @@
 # Requirements Assistant Runtime Contract
 
-All generated Native, BMAD-based, and Hybrid implementations must follow this contract.
-
 ## BA working checkpoints
 
 The Assistant works autonomously inside a stage and collaboratively between stages. After each stage listed as a BA working checkpoint in `team-generated/workflow-gates.md` (by default: intake summary, specification, stories/acceptance criteria):

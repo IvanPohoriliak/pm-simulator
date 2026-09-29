@@ -2,13 +2,13 @@
 
 | Source | Type | Link/Path | Purpose | Authority scope / priority | Freshness | Confirmed by BA | Execution copy of |
 |---|---|---|---|---|---|---|---|
-| pm-simulator GitHub repo | Git repository | https://github.com/IvanPohoriliak/pm-simulator | Full product codebase | Authoritative for current implementation | Live (origin) | Yes — Phase 3, 2026-09-29 | — |
-| README.md | Product documentation | https://github.com/IvanPohoriliak/pm-simulator/blob/main/README.md | Product description, goals, tech stack, next steps | Authoritative for intended product behaviour (note: "3 weeks" claim is outdated — all 12 weeks implemented) | As of last commit | Yes — Phase 3, 2026-09-29 | — |
-| Local clone at /home/user/pm-simulator | Local filesystem | /home/user/pm-simulator | Execution environment for setup and analysis | Execution copy only — no independent authority | Pinned to commit at session start | N/A | pm-simulator GitHub repo |
+| IvanPohoriliak/pm-simulator (GitHub) | Git repository | https://github.com/IvanPohoriliak/pm-simulator | Sole codebase — all product source files | Authoritative for current implementation behaviour | Live (default branch: main) | Confirmed 2026-09-29 (Gate A — "підтверджую") | — |
+| README.md | Documentation | /home/user/pm-simulator/README.md | Product intent, user-facing description, setup instructions | Authoritative for intended business behaviour (conflict: says "3 weeks" but implementation is 12 weeks — code wins for current behaviour) | As of last commit | Confirmed 2026-09-29 (Gate A — "підтверджую") | — |
+| Local clone (/home/user/pm-simulator) | Execution copy | /home/user/pm-simulator | AI execution context for reading code | Execution copy of IvanPohoriliak/pm-simulator (GitHub) | Pinned to session clone commit | N/A — inherits parent source authority | IvanPohoriliak/pm-simulator (GitHub) |
 
 ## Rules
 
 - Discovered does not mean trusted.
 - Every authoritative source must be confirmed by the BA.
-- The local clone is an execution copy of the GitHub repo, not an independent source.
-- No other sources exist for this project (confirmed by BA: no Jira, ADO, Notion, Drive, Figma, or other docs).
+- Authority may be topic-specific.
+- A local clone inherits the identity and authority of its parent source.
