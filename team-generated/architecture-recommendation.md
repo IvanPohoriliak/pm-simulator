@@ -25,6 +25,6 @@
 - Main tradeoff: BMAD installs a larger framework (~hundreds of files module-wide) for a solo project that needs only linear requirements workflow. No UX/architecture orchestration is needed, so BMAD's multi-agent value would not be realized. Unrelated BMAD capabilities would be installed on disk even if unused.
 
 ## Human choice
-- Chosen architecture: (pending Gate D)
-- Decision: —
-- Date/context: —
+- Chosen architecture: Native
+- Decision: Confirmed — "підтверджую"
+- Date/context: 2026-09-29, consolidated Gate D confirmation

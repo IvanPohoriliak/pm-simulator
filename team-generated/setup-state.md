@@ -14,7 +14,7 @@
 - Assistant home: /home/user/pm-simulator
 
 ## Status
-- Current phase: Phase 7 — Architecture (awaiting Gates B/A/C/D)
+- Current phase: Phase 8 — Installation (Gates B/A/C/D closed)
 - Overall status: In Progress
 
 ## Completed phases
@@ -25,13 +25,13 @@
 - [ ] Phase 4 — Guided discovery
 - [ ] Phase 5 — Trusted sources
 - [ ] Phase 6 — Capability analysis
-- [ ] Phase 7 — Architecture choice
+- [x] Phase 7 — Architecture choice
 - [ ] Phase 8 — Configuration
 - [ ] Phase 9 — Validation
 
 ## Resume
-- Resume phase: Phase 7
-- Last completed step: Phase 3 confirmed by BA; Phases 4-7 artifacts drafted — awaiting Gates B/A/C/D
+- Resume phase: Phase 8
+- Last completed step: Phases 4-7 complete; Gates B/A/C/D closed 2026-09-29; Native architecture confirmed
 - Last blocker: —
 
 ## Workspace
@@ -50,10 +50,10 @@
 
 | Gate ID | Name | Phase | Closed? | Verbatim BA text | When |
 |---|---|---|---|---|---|
-| A | Source Authority | 5 | No | | |
-| B | Discovery Checkpoint | 4 | No | | |
-| C | Capability Scope | 6 | No | | |
-| D | Architecture Choice | 7 | No | | |
+| A | Source Authority | 5 | Yes | підтверджую | 2026-09-29 |
+| B | Discovery Checkpoint | 4 | Yes | підтверджую | 2026-09-29 |
+| C | Capability Scope | 6 | Yes | підтверджую | 2026-09-29 |
+| D | Architecture Choice | 7 | Yes | підтверджую | 2026-09-29 |
 | E | Validation Input | 9 | No | | |
 | F-intake | Skill: requirements-intake | 8 | No | | |
 | F-investigate | Skill: requirements-investigate | 8 | No | | |
@@ -72,7 +72,7 @@
 - None
 
 ## Pending questions
-- Gates B, A, C, D: awaiting BA consolidated confirmation
+- None
 
 ## Generated artifacts
 - team-generated/setup-state.md
@@ -84,7 +84,13 @@
 - team-generated/workflow-gates.md
 - team-generated/trusted-sources.md (pending Gate A)
 - team-generated/capability-profile.md (pending Gate C)
-- team-generated/architecture-recommendation.md (pending Gate D)
+- team-generated/architecture-recommendation.md
+- team-generated/runtime-contract.md
+- team-generated/requirements-rules.md
+- team-generated/ready-for-development.md
+- team-generated/team-config.md
+- team-generated/routing.md
+- team-generated/native/install-map.md
 
 ## Validation
 - Status: Not started
