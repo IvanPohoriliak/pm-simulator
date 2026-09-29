@@ -54,7 +54,7 @@
 | B | Discovery Checkpoint | 4 | Yes | підтверджую | 2026-09-29 |
 | C | Capability Scope | 6 | Yes | підтверджую | 2026-09-29 |
 | D | Architecture Choice | 7 | Yes | підтверджую | 2026-09-29 |
-| E | Validation Input | 9 | No | | |
+| E | Validation Input | 9 | Yes | хочу додати сторінку, яку буде показувати щотижневий прогрес по проходженню сценаріїв - які саме сценарії пройдені і які були оцінки і рекомендації | 2026-09-29 |
 | F-intake | Skill: requirements-intake | 8 | Yes | підтверджую всі 5 | 2026-09-29 |
 | F-investigate | Skill: requirements-investigate | 8 | Yes | підтверджую всі 5 | 2026-09-29 |
 | F-clarify | Skill: requirements-clarify | 8 | Yes | підтверджую всі 5 | 2026-09-29 |
