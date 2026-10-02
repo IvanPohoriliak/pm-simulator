@@ -3,7 +3,7 @@
 The Requirements Assistant reads this file at the start of every session. The BA may edit it at any time, or ask the assistant to; such edits need no separate re-approval. The `Trial mode` line is a service field set by setup, not part of the approved profile.
 
 Status: Approved by BA — "так, профіль схвалюю" — 2026-10-02
-Trial mode: OFF   (set to ON only during validation; the assistant never writes outside while ON)
+Trial mode: ON   (set to ON only during validation; the assistant never writes outside while ON)
 
 ## Setup choice
 - Approach: BMAD (chosen by the BA at setup: «давай спочатку BMAD»)
