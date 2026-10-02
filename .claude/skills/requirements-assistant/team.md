@@ -2,7 +2,7 @@
 
 The Requirements Assistant reads this file at the start of every session. The BA may edit it at any time, or ask the assistant to; such edits need no separate re-approval. The `Trial mode` line is a service field set by setup, not part of the approved profile.
 
-Status: Draft
+Status: Approved by BA — "так" — 2026-10-02
 Trial mode: OFF   (set to ON only during validation; the assistant never writes outside while ON)
 
 ## Setup choice

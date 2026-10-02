@@ -3,9 +3,9 @@
 Temporary working file. Update it after every BA reply, before the next action. Re-read it first after any interruption.
 
 ## Where I am (Open question and Waiting-since are session-local: blanked at Save)
-- Stage / step: 2 — Native vs BMAD choice sent
+- Stage / step: BMAD connected — moving to Stage 6
 - Package location (path or link; only in this file; blanked at Save): /tmp/claude-0/-home-user-pm-simulator/048d27b3-bd29-5199-92bc-ef26bdc330b9/scratchpad/requirements-accelerator/requirements-accelerator-v5.8/
-- Open question to the BA (word for word, as sent; empty when none): Native or BMAD?
+- Open question to the BA (word for word, as sent; empty when none): Would you like to try BMAD on a test idea before saving?
 - Waiting for the BA since: 2026-10-02
 
 ## Core reminders (re-read before every question)
@@ -43,7 +43,7 @@ Temporary working file. Update it after every BA reply, before the next action. 
 | GitHub (GitHub MCP) | Repository — source of truth for code | present | present |
 
 ## Choice
-- Native / BMAD: pending Stage 2
+- Native / BMAD: BMAD — «хочу спробувати BMAD» — 2026-10-02
 
 ## Skills
 | Skill | Status (proposed / shown / approved) | BA's exact words | Date |
