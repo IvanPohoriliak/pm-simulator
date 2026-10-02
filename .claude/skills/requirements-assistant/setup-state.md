@@ -3,7 +3,7 @@
 Temporary working file. Update it after every BA reply, before the next action. Re-read it first after any interruption.
 
 ## Where I am (Open question and Waiting-since are session-local: blanked at Save)
-- Stage / step: Stage 1, question 1 (product) sent
+- Stage / step: Stage 1, question 2 (sources) sent
 - Package location (path or link; only in this file; blanked at Save): /tmp/claude-0/-home-user-pm-simulator/048d27b3-bd29-5199-92bc-ef26bdc330b9/scratchpad/ra510/requirements-accelerator-v5.10/
 - Open question to the BA (word for word, as sent; empty when none): Is this product summary right, and is anything important missing? (README says 3 weeks; the code and scenario-data.json contain 12.)
 - Waiting for the BA since: 2026-10-02
@@ -28,6 +28,7 @@ Temporary working file. Update it after every BA reply, before the next action. 
 ## Decisions (each with the BA's exact words and date)
 | Decision | BA's exact words | Date |
 |---|---|---|
+| Product description correct; weeks 4–12 status | «так, опис правильний, тижні 4-12 це в планах» (code check: scenario-data.json holds 12 weeks, App.jsx:84 caps at 12 — to be shown again in the analysis; my reading: drafted in code, not yet released) | 2026-10-02 |
 | Save progress to working branch | «так, зберігай прогрес у гілку» | 2026-10-02 |
 | Permission to write setup files, drafts folder, note in CLAUDE.md | «так» | 2026-10-02 |
 
