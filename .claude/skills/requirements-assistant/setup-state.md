@@ -3,7 +3,7 @@
 Temporary working file. Update it after every BA reply, before the next action. Re-read it first after any interruption.
 
 ## Where I am (Open question and Waiting-since are session-local: blanked at Save)
-- Stage / step: Stage 1, question 5 (language and format) sent
+- Stage / step: Stage 1, step D (analysis) shown
 - Package location (path or link; only in this file; blanked at Save): /tmp/claude-0/-home-user-pm-simulator/048d27b3-bd29-5199-92bc-ef26bdc330b9/scratchpad/ra510/requirements-accelerator-v5.10/
 - Open question to the BA (word for word, as sent; empty when none): Is this product summary right, and is anything important missing? (README says 3 weeks; the code and scenario-data.json contain 12.)
 - Waiting for the BA since: 2026-10-02
@@ -28,6 +28,7 @@ Temporary working file. Update it after every BA reply, before the next action. 
 ## Decisions (each with the BA's exact words and date)
 | Decision | BA's exact words | Date |
 |---|---|---|
+| Language and format | «так, англійською з Given/When/Then в описі» | 2026-10-02 |
 | Process | «Нема формально прописаних процесів» | 2026-10-02 |
 | Requirements go to Jira KAN, written there, type Story | «так, пиши до Jira KAN, тип Story» | 2026-10-02 |
 | Sources | «https://ipogorilyak.atlassian.net/jira/software/projects/KAN/boards/1?filter=&groupBy=none» (answer to the sources question; code is trusted for current behaviour by default) | 2026-10-02 |
