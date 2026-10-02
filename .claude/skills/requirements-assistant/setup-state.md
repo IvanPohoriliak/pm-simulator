@@ -3,10 +3,10 @@
 Temporary working file. Update it after every BA reply, before the next action. Re-read it first after any interruption.
 
 ## Where I am (Open question and Waiting-since are session-local: blanked at Save)
-- Stage / step: Stage 2 done; BMAD: install question sent (docs read from a local clone of the official repo)
+- Stage / step: Stage 2 done; BMAD skills installed (5), running BMAD setup
 - Package location (path or link; only in this file; blanked at Save): /tmp/claude-0/-home-user-pm-simulator/048d27b3-bd29-5199-92bc-ef26bdc330b9/scratchpad/ra510/requirements-accelerator-v5.10/
 - Open question to the BA (word for word, as sent; empty when none): Is this product summary right, and is anything important missing? (README says 3 weeks; the code and scenario-data.json contain 12.)
-- Waiting for the BA since: 2026-10-02
+- Waiting for the BA since:
 
 ## Core reminders (re-read before every question)
 <!-- Short copy of START.md core rules, kept for survival after compaction. When a core rule in START.md changes, change it here and in the setup-in-progress note of every file in environments/. -->
@@ -28,6 +28,7 @@ Temporary working file. Update it after every BA reply, before the next action. 
 ## Decisions (each with the BA's exact words and date)
 | Decision | BA's exact words | Date |
 |---|---|---|
+| Install BMAD skills (bmad, bmod-method, bmod-core-tools, bmad-build, bmad-product-brief) | «так, встановлюй» | 2026-10-02 |
 | Stage 1 analysis right; weeks 4–12 marked draft without hidden consequences | «так, аналіз правильний, познач як чернетку без прихованих наслідків» | 2026-10-02 |
 | Language and format | «так, англійською з Given/When/Then в описі» | 2026-10-02 |
 | Process | «Нема формально прописаних процесів» | 2026-10-02 |
@@ -57,6 +58,7 @@ Temporary working file. Update it after every BA reply, before the next action. 
 
 ## Written outside (should stay empty until the Save stage)
 - Downloaded the official BMAD repository (shallow clone, outside the repository, in a temporary folder) after the BA's «можеш clone цього репо зробити в наш репозиторій?»; nothing written to any external system.
+- Installed 5 BMAD skills with the official command `npx skills add bmad-code-org/BMAD-METHOD --skill … --agent claude-code --yes` (downloads from GitHub) after the BA's yes.
 
 ## Saving
 - BA's decision on saving:
