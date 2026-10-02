@@ -3,7 +3,7 @@
 Temporary working file. Update it after every BA reply, before the next action. Re-read it first after any interruption.
 
 ## Where I am (Open question and Waiting-since are session-local: blanked at Save)
-- Stage / step: Stage 5, second trial case «review KAN» (run in the main context, not fresh); Intake checkpoint of case 1 still unanswered
+- Stage / step: Stage 5, case 2: Review of KAN done (requirements/kan-stories-review/review.md); Ready asked by the BA, no Definition of Ready; case 1 Intake checkpoint still unanswered
 - Package location (path or link; only in this file; blanked at Save): /tmp/claude-0/-home-user-pm-simulator/048d27b3-bd29-5199-92bc-ef26bdc330b9/scratchpad/ra510/requirements-accelerator-v5.10/
 - Open question to the BA (word for word, as sent; empty when none): Is this product summary right, and is anything important missing? (README says 3 weeks; the code and scenario-data.json contain 12.)
 - Waiting for the BA since: 2026-10-02
@@ -28,6 +28,7 @@ Temporary working file. Update it after every BA reply, before the next action. 
 ## Decisions (each with the BA's exact words and date)
 | Decision | BA's exact words | Date |
 |---|---|---|
+| Review KAN: find discrepancies and say whether ready for development | «знайди невідповідності в ній якщо є і визнач чи готова до девелопменту» | 2026-10-02 |
 | Run the assistant on «review KAN» | «давай ще так /requirements-assistant review KAN» | 2026-10-02 |
 | Validate Native on the idea «hidden consequences for weeks 4–12» | «давай продовжимо» (reply to the proposal; the BA did not answer the question about showing the skill files) | 2026-10-02 |
 | Add entry-point lines to CLAUDE.md | «так, додавай» | 2026-10-02 |
