@@ -6,8 +6,7 @@ Status: Draft
 Trial mode: OFF   (set to ON only during validation; the assistant never writes outside while ON)
 
 ## Setup choice
-- Approach: (to be set in Stage 2)
-- Skills installed (approved one by one at setup):
+- Approach: BMAD
 
 ## Product
 - Name: PM Simulator
@@ -44,20 +43,6 @@ Unless stated otherwise, the code is the truth for how the product behaves today
 - Acceptance criteria location: in the description field (no dedicated AC field in Jira KAN)
 - Specification template: default
 - Drafts folder: `requirements/`
-
-## Stages and checkpoints
-
-| Stage | Used | Assistant stops for approval |
-|---|---|---|
-| Intake | yes | yes |
-| Investigate | yes | no |
-| Clarify | yes | asks and waits for answers |
-| Specify | yes | yes |
-| Stories & AC | yes | yes |
-| Review | yes | no |
-| Ready | yes | no |
-| Impact | on request | no |
-| Publish | yes | always — one yes per item (cannot be switched off) |
 
 ## Approvals and Definition of Ready
 - Who approves requirements: BA (Ivan)
