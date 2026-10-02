@@ -3,7 +3,7 @@
 Temporary working file. Update it after every BA reply, before the next action. Re-read it first after any interruption.
 
 ## Where I am (Open question and Waiting-since are session-local: blanked at Save)
-- Stage / step: Stage 4, Quick vs Detailed asked
+- Stage / step: Stage 4, Quick: all nine skills shown, waiting for one yes
 - Package location (path or link; only in this file; blanked at Save): /tmp/claude-0/-home-user-pm-simulator/048d27b3-bd29-5199-92bc-ef26bdc330b9/scratchpad/ra60/requirements-accelerator-v6.0/
 - Open question to the BA (word for word, as sent; empty when none):
 - Waiting for the BA since: 2026-10-02
@@ -28,6 +28,7 @@ Temporary working file. Update it after every BA reply, before the next action. 
 ## Decisions (each with the BA's exact words and date)
 | Decision | BA's exact words | Date |
 |---|---|---|
+| Quick mode for the skills | «quick» | 2026-10-02 |
 | Main rules (RULES.md as SKILL.md) approved | «так, правила схвалюю» | 2026-10-02 |
 | team.md (with stages, approver, rules) approved | «так, профіль схвалюю» | 2026-10-02 |
 | No other team rules | «ні» | 2026-10-02 |
