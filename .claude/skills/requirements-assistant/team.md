@@ -40,13 +40,13 @@ Unless stated otherwise, the code is the truth for how the product behaves today
 
 ## How we write requirements
 - Language of artefacts: English
-- Story format: as in KAN-8…KAN-12 (User/Business Outcome, Business Value, Scope, Dependencies, Assumptions, Status) — to be confirmed in Setup stage 3
+- Story format: as in KAN-8…KAN-12 (User/Business Outcome, Business Value, Scope, Dependencies, Assumptions, Status) (seen in existing tickets; the BA confirmed only the language and the Given/When/Then format)
 - Acceptance criteria style: Given / When / Then, in the description under "Acceptance Criteria" (no separate field)
 - Specification template: default
 - Drafts folder: `requirements/`
 
 ## Approvals and Definition of Ready
-- Who approves requirements: the BA
+- Who approves requirements: not stated by the BA — the assistant treats the BA in the conversation as the approver (my reading, to confirm)
 - Definition of Ready: not defined — the assistant reports gaps but gives no READY verdict
 
 ## Team rules and things the assistant never does
