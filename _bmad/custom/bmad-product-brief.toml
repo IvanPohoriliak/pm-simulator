@@ -1,6 +1,0 @@
-[workflow]
-persistent_facts = [
-  "file:{project-root}/.claude/skills/requirements-assistant/team.md",
-  "file:{project-root}/_bmad/custom/requirements-rules.md",
-  "file:{project-root}/_bmad/custom/requirements-publish.md",
-]
