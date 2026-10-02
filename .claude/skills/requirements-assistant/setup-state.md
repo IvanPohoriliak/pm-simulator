@@ -3,7 +3,7 @@
 Temporary working file. Update it after every BA reply, before the next action. Re-read it first after any interruption.
 
 ## Where I am (Open question and Waiting-since are session-local: blanked at Save)
-- Stage / step: Stage 2 done; BMAD: docs blocked, asked yes to clone the official GitHub repository outside the repo
+- Stage / step: Stage 2 done; BMAD: install + analysis-skills choice question sent (docs read from a local clone of the official repo)
 - Package location (path or link; only in this file; blanked at Save): /tmp/claude-0/-home-user-pm-simulator/048d27b3-bd29-5199-92bc-ef26bdc330b9/scratchpad/ra60/requirements-accelerator-v6.0/
 - Open question to the BA (word for word, as sent; empty when none):
 - Waiting for the BA since: 2026-10-02
@@ -28,6 +28,8 @@ Temporary working file. Update it after every BA reply, before the next action. 
 ## Decisions (each with the BA's exact words and date)
 | Decision | BA's exact words | Date |
 |---|---|---|
+| Clone the official BMAD repository outside the repo | «так, клонуй» | 2026-10-02 |
+| Native or BMAD | «спробуємо BMAD» | 2026-10-02 |
 | Stage 1 analysis right; weeks 4–12 marked draft without hidden consequences | «так, аналіз правильний, познач як чернетку без прихованих наслідків» | 2026-10-02 |
 | Language and format | «так, англійською з Given/When/Then в описі» | 2026-10-02 |
 | Process | «Нема формально прописаних процесів» | 2026-10-02 |
@@ -56,7 +58,7 @@ Temporary working file. Update it after every BA reply, before the next action. 
 - Report:
 
 ## Written outside (should stay empty until the Save stage)
-- (none)
+- Downloaded the official BMAD repository (shallow clone, in a temporary folder outside the repository) after the BA's «так, клонуй»; nothing written to any external system.
 
 ## Saving
 - BA's decision on saving:
