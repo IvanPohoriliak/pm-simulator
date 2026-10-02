@@ -66,7 +66,7 @@ Temporary working file. Update it after every BA reply, before the next action. 
 ## Skills
 | Skill | Status (proposed / shown / approved) | BA's exact words | Date |
 |---|---|---|---|
-| all nine (intake, investigate, clarify, specify, stories, review, ready, impact, publish) | list agreed (not yet built) | «підходить» | 2026-10-02 |
+| all nine (intake, investigate, clarify, specify, stories, review, ready, impact, publish) | approved (quick, no live example, full text not shown) | «так, всі скіли схвалюю» (list earlier agreed: «підходить») | 2026-10-02 |
 
 ## Validation
 - Trial mode: ON
