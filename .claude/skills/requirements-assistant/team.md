@@ -2,12 +2,12 @@
 
 The Requirements Assistant reads this file at the start of every session. The BA may edit it at any time, or ask the assistant to; such edits need no separate re-approval. The `Trial mode` line is a service field set by setup, not part of the approved profile.
 
-Status: Approved by BA — "так, профіль схвалюю" — 2026-10-02
+Status: Draft
 Trial mode: ON   (set to ON only during validation; the assistant never writes outside while ON)
 
 ## Setup choice
 - Approach: Native with BMAD as an extra (BA: «давай спочатку BMAD», then «додатково»)
-- Skills installed (approved at setup): BMAD skills `bmad`, `bmad-build`, `bmad-product-brief` and the module records `bmod-method`, `bmod-core-tools`; the Native `requirements-assistant` skill: to be installed in Setup stage 4
+- Skills installed (approved at setup): the Native `requirements-assistant` skill with all nine stages (list approved: «підходить»), built in Setup stage 4; BMAD skills `bmad`, `bmad-build`, `bmad-product-brief` and the module records `bmod-method`, `bmod-core-tools`
 
 ## Product
 - Name: PM Simulator
@@ -45,12 +45,30 @@ Unless stated otherwise, the code is the truth for how the product behaves today
 - Specification template: default
 - Drafts folder: `requirements/`
 
+## Stages and checkpoints
+
+| Stage | Used | Assistant stops for approval |
+|---|---|---|
+| Intake | yes | yes |
+| Investigate | yes | no |
+| Clarify | yes | asks and waits for answers |
+| Specify | yes | yes |
+| Stories & AC | yes | yes |
+| Review | yes | no |
+| Ready | yes | no |
+| Impact | on request | no |
+| Publish | yes | always — one yes per item (cannot be switched off) |
+
+Checkpoints agreed by the BA: «залишай» (after intake, specification and stories).
+
 ## Approvals and Definition of Ready
-- Who approves requirements: not stated by the BA — the assistant treats the BA in the conversation as the approver (my reading, to confirm)
+- Who approves requirements: the BA alone («я»)
 - Definition of Ready: not defined — the assistant reports gaps but gives no READY verdict
 
 ## Team rules and things the assistant never does
 - No formal process is written down («Нема формально прописаних процесів»)
+- The assistant never sets priority, estimates, sprints or dates («так»).
+- No other team rules («ні»).
 - BMAD's own agents and skills do not follow the requirements-assistant's checkpoints and publishing rules; for requirements work and publishing use the requirements-assistant skill.
 
 ## Setup record
