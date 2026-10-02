@@ -1,4 +1,0 @@
-[core]
-project_name = "pm-simulator"
-output_folder = "{project-root}/_bmad-output"
-active_initiative = "pm-simulator"
