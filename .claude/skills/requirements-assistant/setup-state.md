@@ -3,7 +3,7 @@
 Temporary working file. Update it after every BA reply, before the next action. Re-read it first after any interruption.
 
 ## Where I am (Open question and Waiting-since are session-local: blanked at Save)
-- Stage / step: trial of bmad-product-brief; active_initiative set; waiting for the BA's test idea
+- Stage / step: BMAD trial finished; BA wants Native next — clarifying beside vs instead
 - Package location (path or link; only in this file; blanked at Save): /tmp/claude-0/-home-user-pm-simulator/048d27b3-bd29-5199-92bc-ef26bdc330b9/scratchpad/ra60/requirements-accelerator-v6.0/
 - Open question to the BA (word for word, as sent; empty when none):
 - Waiting for the BA since: 2026-10-02
@@ -28,6 +28,7 @@ Temporary working file. Update it after every BA reply, before the next action. 
 ## Decisions (each with the BA's exact words and date)
 | Decision | BA's exact words | Date |
 |---|---|---|
+| BMAD trial enough; Native next | «працює, цього досить. Тепер встановимо Native» | 2026-10-02 |
 | Add BMAD setting active_initiative = "pm-simulator" to _bmad/config.toml | «так» | 2026-10-02 |
 | Try BMAD on a test idea | «давай спробуємо» | 2026-10-02 |
 | team.md profile approved | «так, профіль схвалюю» | 2026-10-02 |
@@ -59,7 +60,7 @@ Temporary working file. Update it after every BA reply, before the next action. 
 ## Validation
 - Trial mode: ON
 - Case: bmad-product-brief on a test idea
-- Report:
+- Report: BMAD trial — bmad-product-brief ran (activation with the team profile and rules, active_initiative added after a yes, greeting and first Discovery questions); BA: «працює, цього досить»; no brief drafted; Jira write path not tested
 
 ## Written outside (should stay empty until the Save stage)
 - Downloaded the official BMAD repository (shallow clone, in a temporary folder outside the repository) after the BA's «так, клонуй»; nothing written to any external system.
