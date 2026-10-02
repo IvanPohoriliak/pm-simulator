@@ -6,8 +6,8 @@ Status: Draft
 Trial mode: OFF   (set to ON only during validation; the assistant never writes outside while ON)
 
 ## Setup choice
-- Approach: (chosen in Setup stage 2)
-- Skills installed (approved one by one at setup): (Setup stages 3–4)
+- Approach: BMAD (chosen by the BA at setup: «спробуємо BMAD»)
+- Skills installed (approved at setup): BMAD skills `bmad`, `bmad-build`, `bmad-product-brief` and the module records `bmod-method`, `bmod-core-tools` (BA: «так, встановлюй bmad-product-brief»); the Native `requirements-assistant` skill is not installed
 
 ## Product
 - Name: PM Simulator
@@ -46,7 +46,7 @@ Unless stated otherwise, the code is the truth for how the product behaves today
 - Drafts folder: `requirements/`
 
 ## Approvals and Definition of Ready
-- Who approves requirements: (Setup stage 3)
+- Who approves requirements: not stated by the BA
 - Definition of Ready: not defined — the assistant reports gaps but gives no READY verdict
 
 ## Team rules and things the assistant never does
