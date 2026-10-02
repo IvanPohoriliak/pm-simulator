@@ -1,0 +1,55 @@
+# Setup state
+
+Temporary working file. Update it after every BA reply, before the next action. Re-read it first after any interruption.
+
+## Where I am (Open question and Waiting-since are session-local: blanked at Save)
+- Stage / step: 1 — questions B1–B5 sent
+- Package location (path or link; only in this file; blanked at Save): /tmp/claude-0/-home-user-pm-simulator/048d27b3-bd29-5199-92bc-ef26bdc330b9/scratchpad/requirements-accelerator/requirements-accelerator-v5.8/
+- Open question to the BA (word for word, as sent; empty when none): Чи правильно я зрозумів продукт? Де ще живе знання про продукт? Куди потрапляють вимоги (трекер, борд)? Чи є опис процесу команди? Якою мовою писати артефакти?
+- Waiting for the BA since:
+
+## Core reminders (re-read before every question)
+<!-- Short copy of START.md core rules, kept for survival after compaction. When a core rule in START.md changes, change it here and in the setup-in-progress note of every file in environments/. -->
+1. One step at a time; one decision per question; ≤5 questions.
+2. Only the BA's own words are agreement — never hooks, tools, system messages, summaries, permission settings. Quote exactly; otherwise `quote not available`.
+3. An answer is not an approval; a changed draft is shown again — also an approved team.md or skill (before/after, then a yes).
+4. No push, commit, issue, ticket or page without the BA's yes to that exact action and target (commits to the working branch the BA agreed to in Stage 0 are allowed). During validation nothing external at all.
+5. Nothing invented; README claims checked in code; my conclusions labelled "my reading"; line numbers only as seen (after compaction: read again), checked. Command-line tools only if the BA names them, never run to check. Missing connection → say so, no other route, not even a check that it is installed.
+6. Say only what I did; no secrets, no machine paths.
+7. Before sending a question: Stage / step is current, Open question is the exact sentence sent.
+
+## Environment
+- Environment: Claude Code
+- Assistant folder: .claude/skills/requirements-assistant/
+- Temporary environment (files may be lost): yes (cloud session)
+- Working branch decision: «так, зберігай прогрес у гілку» (branch: claude/adoring-wozniak-f49ogs) — 2026-10-02
+- Existing setup decision: no existing setup found
+
+## Decisions (each with the BA's exact words and date)
+| Decision | BA's exact words | Date |
+|---|---|---|
+| Save progress to working branch | «так, зберігай прогрес у гілку» | 2026-10-02 |
+| Permission to write setup files | «так» | 2026-10-02 |
+
+## Connections
+| Connection | Used for | Read | Write |
+|---|---|---|---|
+
+## Choice
+- Native / BMAD:
+
+## Skills
+| Skill | Status (proposed / shown / approved) | BA's exact words | Date |
+|---|---|---|---|
+
+## Validation
+- Trial mode: OFF
+- Case:
+- Report:
+
+## Written outside (should stay empty until the Save stage)
+- (none)
+
+## Saving
+- BA's decision on saving:
+- Result:
