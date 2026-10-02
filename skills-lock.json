@@ -13,6 +13,12 @@
       "skillPath": "skills/bmad-build/SKILL.md",
       "computedHash": "355ac38f059cbc3a518d87f262073424f50132c0b2bfdbb64163ff950455ed30"
     },
+    "bmad-product-brief": {
+      "source": "bmad-code-org/BMAD-METHOD",
+      "sourceType": "github",
+      "skillPath": "skills/bmad-product-brief/SKILL.md",
+      "computedHash": "e9a5493669489cba89028d863dc6735928a7390860faf55eda69c36bbc140472"
+    },
     "bmod-core-tools": {
       "source": "bmad-code-org/BMAD-METHOD",
       "sourceType": "github",
