@@ -3,7 +3,7 @@
 Temporary working file. Update it after every BA reply, before the next action. Re-read it first after any interruption.
 
 ## Where I am (Open question and Waiting-since are session-local: blanked at Save)
-- Stage / step: Stage 1, question 4 (process) sent
+- Stage / step: Stage 1, question 5 (language and format) sent
 - Package location (path or link; only in this file; blanked at Save): /tmp/claude-0/-home-user-pm-simulator/048d27b3-bd29-5199-92bc-ef26bdc330b9/scratchpad/ra60/requirements-accelerator-v6.0/
 - Open question to the BA (word for word, as sent; empty when none):
 - Waiting for the BA since: 2026-10-02
@@ -28,6 +28,7 @@ Temporary working file. Update it after every BA reply, before the next action. 
 ## Decisions (each with the BA's exact words and date)
 | Decision | BA's exact words | Date |
 |---|---|---|
+| Process | «Нема формально прописаних процесів» | 2026-10-02 |
 | Requirements go to Jira KAN, written there, type Story | «так, пиши до Jira KAN, тип Story» | 2026-10-02 |
 | Sources | «https://ipogorilyak.atlassian.net/jira/software/projects/KAN/boards/1?filter=&groupBy=none» (answer to the sources question; code is trusted for current behaviour by default) | 2026-10-02 |
 | Product description correct; weeks 4–12 status | «так, опис правильний, тижні 4-12 в планах» (code check: scenario-data.json holds 12 weeks, App.jsx:84 caps at 12 — to be shown again in the analysis) | 2026-10-02 |
@@ -37,6 +38,8 @@ Temporary working file. Update it after every BA reply, before the next action. 
 ## Connections
 | Connection | Used for | Read | Write |
 |---|---|---|---|
+| Jira (Atlassian connector), site ipogorilyak.atlassian.net, project KAN | Requirements tracker and source of existing stories | checked read (KAN-1…KAN-12 listed, KAN-9 read in full) | write tool present — never tested by writing |
+| GitHub (GitHub connector) | Repository | present (not used for a check; code read locally) | present — never tested |
 
 ## Choice
 - Native / BMAD:
