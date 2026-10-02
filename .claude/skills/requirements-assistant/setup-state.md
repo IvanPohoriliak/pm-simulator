@@ -3,10 +3,10 @@
 Temporary working file. Update it after every BA reply, before the next action. Re-read it first after any interruption.
 
 ## Where I am (Open question and Waiting-since are session-local: blanked at Save)
-- Stage / step: Stage 5 done — Stage 6 starting
+- Stage / step: Stage 6, trial drafts removed; asking whether to keep setup-state.md
 - Package location (path or link; only in this file; blanked at Save): /tmp/claude-0/-home-user-pm-simulator/048d27b3-bd29-5199-92bc-ef26bdc330b9/scratchpad/ra510/requirements-accelerator-v5.10/
 - Open question to the BA (word for word, as sent; empty when none): Is this product summary right, and is anything important missing? (README says 3 weeks; the code and scenario-data.json contain 12.)
-- Waiting for the BA since:
+- Waiting for the BA since: 2026-10-02
 
 ## Core reminders (re-read before every question)
 <!-- Short copy of START.md core rules, kept for survival after compaction. When a core rule in START.md changes, change it here and in the setup-in-progress note of every file in environments/. -->
@@ -28,6 +28,7 @@ Temporary working file. Update it after every BA reply, before the next action. 
 ## Decisions (each with the BA's exact words and date)
 | Decision | BA's exact words | Date |
 |---|---|---|
+| Remove the trial's draft files (two requirements folders and the BMAD brief workspace) | «видали» | 2026-10-02 |
 | Review KAN: find discrepancies and say whether ready for development | «знайди невідповідності в ній якщо є і визнач чи готова до девелопменту» | 2026-10-02 |
 | Run the assistant on «review KAN» | «давай ще так /requirements-assistant review KAN» | 2026-10-02 |
 | Validate Native on the idea «hidden consequences for weeks 4–12» | «давай продовжимо» (reply to the proposal; the BA did not answer the question about showing the skill files) | 2026-10-02 |
