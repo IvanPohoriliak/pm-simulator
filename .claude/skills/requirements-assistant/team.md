@@ -12,7 +12,7 @@ Trial mode: OFF   (set to ON only during validation; the assistant never writes 
 ## Product
 - Name: PM Simulator
 - What it is: An interactive simulation where the player is the PM of Subflow (a B2B SaaS startup) and lives through a 12-week software project by making irreversible decisions. Four metrics are tracked (Client Trust, Team Mood, Tech Debt, Timeline Risk). Claude API generates feedback after each decision and a final review. Stack: React 18, Vite, Claude API, plain CSS, Vercel.
-- Status of weeks 4–12: BA says they are planned («так, опис правильний, тижні 4-12 це в планах»). Code check: `src/data/scenario-data.json` holds 12 weeks with 4 options each and `src/App.jsx` caps the game at week 12; README says "3 weeks"; Jira KAN-8, KAN-9, KAN-12 describe 12 weeks as "Implemented". Open: to be settled with the BA.
+- Status of weeks 4–12: draft, without hidden consequences (BA: «так, аналіз правильний, познач як чернетку без прихованих наслідків»). Code check: `src/data/scenario-data.json` has all 12 weeks with 4 options each; weeks 1–3 options carry a `hidden` field (delayed consequence), weeks 4–12 do not; `src/App.jsx:84` caps the game at week 12 and the UI runs through all 12. README says "3 weeks" (outdated).
 - Users: Product managers (README: validation with 10 testers)
 - Team terms:
 
