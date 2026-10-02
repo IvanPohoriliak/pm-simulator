@@ -3,7 +3,7 @@
 Temporary working file. Update it after every BA reply, before the next action. Re-read it first after any interruption.
 
 ## Where I am (Open question and Waiting-since are session-local: blanked at Save)
-- Stage / step: Stage 4 done — validation question
+- Stage / step: Stage 5 skipped (BA declined validation); Stage 6 check: team.md change (Trial mode, Validation line) asked
 - Package location (path or link; only in this file; blanked at Save): /tmp/claude-0/-home-user-pm-simulator/048d27b3-bd29-5199-92bc-ef26bdc330b9/scratchpad/ra60/requirements-accelerator-v6.0/
 - Open question to the BA (word for word, as sent; empty when none):
 - Waiting for the BA since: 2026-10-02
@@ -28,6 +28,7 @@ Temporary working file. Update it after every BA reply, before the next action. 
 ## Decisions (each with the BA's exact words and date)
 | Decision | BA's exact words | Date |
 |---|---|---|
+| Do not validate the assistant on a real idea | «ні, цього хватить» | 2026-10-02 |
 | Add entry-point lines to CLAUDE.md | «так, додавай» | 2026-10-02 |
 | Quick mode for the skills | «quick» | 2026-10-02 |
 | Main rules (RULES.md as SKILL.md) approved | «так, правила схвалюю» | 2026-10-02 |
