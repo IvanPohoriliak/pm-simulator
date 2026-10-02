@@ -3,7 +3,7 @@
 Temporary working file. Update it after every BA reply, before the next action. Re-read it first after any interruption.
 
 ## Where I am (Open question and Waiting-since are session-local: blanked at Save)
-- Stage / step: Stage 3, section 3 (who approves) asked
+- Stage / step: Stage 3, section 3 (never-do list) asked
 - Package location (path or link; only in this file; blanked at Save): /tmp/claude-0/-home-user-pm-simulator/048d27b3-bd29-5199-92bc-ef26bdc330b9/scratchpad/ra60/requirements-accelerator-v6.0/
 - Open question to the BA (word for word, as sent; empty when none):
 - Waiting for the BA since: 2026-10-02
@@ -28,6 +28,7 @@ Temporary working file. Update it after every BA reply, before the next action. 
 ## Decisions (each with the BA's exact words and date)
 | Decision | BA's exact words | Date |
 |---|---|---|
+| Who approves requirements: the BA alone | «я» | 2026-10-02 |
 | Checkpoints: after intake, specification, stories; publish always one yes per item (my reading: «так» accepts the proposal as shown) | «так» | 2026-10-02 |
 | List of nine Native skills | «підходить» | 2026-10-02 |
 | team.md change: approach Native+BMAD, Native skill to install, BMAD note in Team rules | «так» | 2026-10-02 |
