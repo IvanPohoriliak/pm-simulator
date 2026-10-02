@@ -3,10 +3,10 @@
 Temporary working file. Update it after every BA reply, before the next action. Re-read it first after any interruption.
 
 ## Where I am (Open question and Waiting-since are session-local: blanked at Save)
-- Stage / step: Stage 1, step D (analysis) shown
+- Stage / step: Stage 1 done — Stage 2 starting
 - Package location (path or link; only in this file; blanked at Save): /tmp/claude-0/-home-user-pm-simulator/048d27b3-bd29-5199-92bc-ef26bdc330b9/scratchpad/ra60/requirements-accelerator-v6.0/
 - Open question to the BA (word for word, as sent; empty when none):
-- Waiting for the BA since: 2026-10-02
+- Waiting for the BA since:
 
 ## Core reminders (re-read before every question)
 <!-- Short copy of START.md core rules, kept for survival after compaction. When a core rule in START.md changes, change it here and in the setup-in-progress note of every file in environments/. -->
@@ -28,6 +28,7 @@ Temporary working file. Update it after every BA reply, before the next action. 
 ## Decisions (each with the BA's exact words and date)
 | Decision | BA's exact words | Date |
 |---|---|---|
+| Stage 1 analysis right; weeks 4–12 marked draft without hidden consequences | «так, аналіз правильний, познач як чернетку без прихованих наслідків» | 2026-10-02 |
 | Language and format | «так, англійською з Given/When/Then в описі» | 2026-10-02 |
 | Process | «Нема формально прописаних процесів» | 2026-10-02 |
 | Requirements go to Jira KAN, written there, type Story | «так, пиши до Jira KAN, тип Story» | 2026-10-02 |
