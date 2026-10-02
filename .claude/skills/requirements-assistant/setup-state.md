@@ -3,7 +3,7 @@
 Temporary working file. Update it after every BA reply, before the next action. Re-read it first after any interruption.
 
 ## Where I am (Open question and Waiting-since are session-local: blanked at Save)
-- Stage / step: trial of bmad-product-brief; Discovery in progress (idea: PMO Dashboard to review the team progress)
+- Stage / step: BMAD trial finished; BA wants Native next — clarifying beside vs instead
 - Package location (path or link; only in this file; blanked at Save): /tmp/claude-0/-home-user-pm-simulator/048d27b3-bd29-5199-92bc-ef26bdc330b9/scratchpad/ra510/requirements-accelerator-v5.10/
 - Open question to the BA (word for word, as sent; empty when none): Is this product summary right, and is anything important missing? (README says 3 weeks; the code and scenario-data.json contain 12.)
 - Waiting for the BA since: 2026-10-02
@@ -28,6 +28,7 @@ Temporary working file. Update it after every BA reply, before the next action. 
 ## Decisions (each with the BA's exact words and date)
 | Decision | BA's exact words | Date |
 |---|---|---|
+| BMAD trial enough; Native next | «достатньо, працює. Давай тепер Native» | 2026-10-02 |
 | Trial idea | «PMO Dashboard to review the team progress» | 2026-10-02 |
 | Add BMAD setting active_initiative = "pm-simulator" to _bmad/config.toml | «додай» | 2026-10-02 |
 | Try BMAD on a test idea | «давай спробуємо» | 2026-10-02 |
@@ -58,7 +59,7 @@ Temporary working file. Update it after every BA reply, before the next action. 
 ## Validation
 - Trial mode: ON
 - Case: bmad-product-brief on a test idea
-- Report:
+- Report: BMAD trial — bmad-product-brief ran (activation, Discovery started on «PMO Dashboard to review the team progress»); BA: «достатньо, працює»; brief not drafted; Jira write path not tested
 
 ## Written outside (should stay empty until the Save stage)
 - Downloaded the official BMAD repository (shallow clone, outside the repository, in a temporary folder) after the BA's «можеш clone цього репо зробити в наш репозиторій?»; nothing written to any external system.
