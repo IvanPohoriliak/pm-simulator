@@ -6,8 +6,8 @@ Status: Approved by BA — "так, профіль схвалюю" — 2026-10-0
 Trial mode: ON   (set to ON only during validation; the assistant never writes outside while ON)
 
 ## Setup choice
-- Approach: BMAD (chosen by the BA at setup: «давай спочатку BMAD»)
-- Skills installed (approved at setup): BMAD skills `bmad`, `bmad-build`, `bmad-product-brief` and the module records `bmod-method`, `bmod-core-tools`; the Native `requirements-assistant` skill is not installed
+- Approach: Native with BMAD as an extra (BA: «давай спочатку BMAD», then «додатково»)
+- Skills installed (approved at setup): BMAD skills `bmad`, `bmad-build`, `bmad-product-brief` and the module records `bmod-method`, `bmod-core-tools`; the Native `requirements-assistant` skill: to be installed in Setup stage 4
 
 ## Product
 - Name: PM Simulator
@@ -51,6 +51,7 @@ Unless stated otherwise, the code is the truth for how the product behaves today
 
 ## Team rules and things the assistant never does
 - No formal process is written down («Нема формально прописаних процесів»)
+- BMAD's own agents and skills do not follow the requirements-assistant's checkpoints and publishing rules; for requirements work and publishing use the requirements-assistant skill.
 
 ## Setup record
 - Package version: Requirements Accelerator v5.10

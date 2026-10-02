@@ -3,10 +3,10 @@
 Temporary working file. Update it after every BA reply, before the next action. Re-read it first after any interruption.
 
 ## Where I am (Open question and Waiting-since are session-local: blanked at Save)
-- Stage / step: Native beside BMAD chosen; waiting for yes to the team.md change (approach + BMAD note)
+- Stage / step: Stage 3 starting (skills list), BMAD beside Native
 - Package location (path or link; only in this file; blanked at Save): /tmp/claude-0/-home-user-pm-simulator/048d27b3-bd29-5199-92bc-ef26bdc330b9/scratchpad/ra510/requirements-accelerator-v5.10/
 - Open question to the BA (word for word, as sent; empty when none): Is this product summary right, and is anything important missing? (README says 3 weeks; the code and scenario-data.json contain 12.)
-- Waiting for the BA since: 2026-10-02
+- Waiting for the BA since:
 
 ## Core reminders (re-read before every question)
 <!-- Short copy of START.md core rules, kept for survival after compaction. When a core rule in START.md changes, change it here and in the setup-in-progress note of every file in environments/. -->
@@ -28,6 +28,7 @@ Temporary working file. Update it after every BA reply, before the next action. 
 ## Decisions (each with the BA's exact words and date)
 | Decision | BA's exact words | Date |
 |---|---|---|
+| team.md change: approach Native+BMAD, Native skill to install, BMAD note in Team rules | «так» | 2026-10-02 |
 | Native in addition to BMAD | «додатково» | 2026-10-02 |
 | BMAD trial enough; Native next | «достатньо, працює. Давай тепер Native» | 2026-10-02 |
 | Trial idea | «PMO Dashboard to review the team progress» | 2026-10-02 |
