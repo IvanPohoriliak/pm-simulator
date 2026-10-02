@@ -3,7 +3,7 @@
 Temporary working file. Update it after every BA reply, before the next action. Re-read it first after any interruption.
 
 ## Where I am (Open question and Waiting-since are session-local: blanked at Save)
-- Stage / step: BMAD trial finished; BA wants Native next — clarifying beside vs instead
+- Stage / step: Native beside BMAD chosen; waiting for yes to the team.md change (approach + BMAD note)
 - Package location (path or link; only in this file; blanked at Save): /tmp/claude-0/-home-user-pm-simulator/048d27b3-bd29-5199-92bc-ef26bdc330b9/scratchpad/ra510/requirements-accelerator-v5.10/
 - Open question to the BA (word for word, as sent; empty when none): Is this product summary right, and is anything important missing? (README says 3 weeks; the code and scenario-data.json contain 12.)
 - Waiting for the BA since: 2026-10-02
@@ -28,6 +28,7 @@ Temporary working file. Update it after every BA reply, before the next action. 
 ## Decisions (each with the BA's exact words and date)
 | Decision | BA's exact words | Date |
 |---|---|---|
+| Native in addition to BMAD | «додатково» | 2026-10-02 |
 | BMAD trial enough; Native next | «достатньо, працює. Давай тепер Native» | 2026-10-02 |
 | Trial idea | «PMO Dashboard to review the team progress» | 2026-10-02 |
 | Add BMAD setting active_initiative = "pm-simulator" to _bmad/config.toml | «додай» | 2026-10-02 |
@@ -50,7 +51,7 @@ Temporary working file. Update it after every BA reply, before the next action. 
 | GitHub (GitHub connector) | Repository | present (not used for a check; code read locally) | present — never tested |
 
 ## Choice
-- Native / BMAD: BMAD — «давай спочатку BMAD» — 2026-10-02 (my reading: BMAD as the main workflow now; Native may be tried afterwards)
+- Native / BMAD: BMAD first («давай спочатку BMAD»), then Native beside it — «додатково» (answer to: Native in addition to BMAD, or instead?) — 2026-10-02
 
 ## Skills
 | Skill | Status (proposed / shown / approved) | BA's exact words | Date |
