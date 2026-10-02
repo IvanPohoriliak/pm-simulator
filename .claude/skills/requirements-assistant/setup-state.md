@@ -3,10 +3,10 @@
 Temporary working file. Update it after every BA reply, before the next action. Re-read it first after any interruption.
 
 ## Where I am (Open question and Waiting-since are session-local: blanked at Save)
-- Stage / step: 1 — questions B1–B5 sent
+- Stage / step: 1 — analysis D sent, waiting for confirmation
 - Package location (path or link; only in this file; blanked at Save): /tmp/claude-0/-home-user-pm-simulator/048d27b3-bd29-5199-92bc-ef26bdc330b9/scratchpad/requirements-accelerator/requirements-accelerator-v5.8/
-- Open question to the BA (word for word, as sent; empty when none): Чи правильно я зрозумів продукт? Де ще живе знання про продукт? Куди потрапляють вимоги (трекер, борд)? Чи є опис процесу команди? Якою мовою писати артефакти?
-- Waiting for the BA since:
+- Open question to the BA (word for word, as sent; empty when none): Is this analysis correct? And clarification: should the assistant write stories to Jira KAN, or keep them as files only?
+- Waiting for the BA since: 2026-10-02
 
 ## Core reminders (re-read before every question)
 <!-- Short copy of START.md core rules, kept for survival after compaction. When a core rule in START.md changes, change it here and in the setup-in-progress note of every file in environments/. -->
@@ -30,10 +30,17 @@ Temporary working file. Update it after every BA reply, before the next action. 
 |---|---|---|
 | Save progress to working branch | «так, зберігай прогрес у гілку» | 2026-10-02 |
 | Permission to write setup files | «так» | 2026-10-02 |
+| Product description correct | «продукт описаний правильно» | 2026-10-02 |
+| Tracker | «трекера немає» (Stage 1 Q3); then provided Jira KAN board URL (Stage 1 Q2) — to be clarified | 2026-10-02 |
+| Language | «пишемо по-англійськи» | 2026-10-02 |
+| Sources | «https://ipogorilyak.atlassian.net/jira/software/projects/KAN/boards/1 та репозиторій» | 2026-10-02 |
+| Process | «Нема формально прописаних процесів» | 2026-10-02 |
 
 ## Connections
 | Connection | Used for | Read | Write |
 |---|---|---|---|
+| Jira (Atlassian MCP) | Requirements tracker — project KAN | checked read (KAN-12 read successfully) | write tool present — never tested by writing |
+| GitHub (GitHub MCP) | Repository — source of truth for code | present | present |
 
 ## Choice
 - Native / BMAD:
