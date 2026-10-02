@@ -3,10 +3,10 @@
 Temporary working file. Update it after every BA reply, before the next action. Re-read it first after any interruption.
 
 ## Where I am (Open question and Waiting-since are session-local: blanked at Save)
-- Stage / step: Stage 5, case 2: Review of KAN done (requirements/kan-stories-review/review.md); Ready asked by the BA, no Definition of Ready; case 1 Intake checkpoint still unanswered
+- Stage / step: Stage 5 done — Stage 6 starting
 - Package location (path or link; only in this file; blanked at Save): /tmp/claude-0/-home-user-pm-simulator/048d27b3-bd29-5199-92bc-ef26bdc330b9/scratchpad/ra510/requirements-accelerator-v5.10/
 - Open question to the BA (word for word, as sent; empty when none): Is this product summary right, and is anything important missing? (README says 3 weeks; the code and scenario-data.json contain 12.)
-- Waiting for the BA since: 2026-10-02
+- Waiting for the BA since:
 
 ## Core reminders (re-read before every question)
 <!-- Short copy of START.md core rules, kept for survival after compaction. When a core rule in START.md changes, change it here and in the setup-in-progress note of every file in environments/. -->
@@ -72,9 +72,19 @@ Temporary working file. Update it after every BA reply, before the next action. 
 | all nine (intake, investigate, clarify, specify, stories, review, ready, impact, publish) | approved (quick, no live example) | «так, всі скіли схвалюю» | 2026-10-02 |
 
 ## Validation
-- Trial mode: ON
+- Trial mode: OFF
 - Case: Native assistant on: add hidden consequences to weeks 4–12 of the simulator, so decisions of weeks 1–3 affect later weeks (idea proposed by the assistant; BA: «давай продовжимо»)
-- Report: BMAD trial — bmad-product-brief ran (activation, Discovery started on «PMO Dashboard to review the team progress»); BA: «достатньо, працює»; brief not drafted; Jira write path not tested
+- Report (2026-10-02, BA ended the validation: «цього досить»):
+  | Skill | Result |
+  |---|---|
+  | Intake | exercised (real), fresh sub-agent on «hidden consequences for weeks 4–12»; stopped at the checkpoint; the BA never answered it, so the draft stays `Draft` |
+  | Review | exercised (real) in the main context (not fresh) on the 12 existing KAN stories: 6 findings with 31 of 31 references verified |
+  | Ready | not run as a stage; the BA asked for it, the assistant gave facts only, no verdict (no Definition of Ready) |
+  | Investigate, Clarify, Specify, Stories & AC, Impact | not exercised |
+  | Publish | not exercised (no dry run); Jira write tool present, never tested by writing |
+  - BMAD: bmad-product-brief ran in trial mode up to the first Discovery questions; no brief drafted.
+  - Not done: the BA never saw the full text of the skill files (Quick mode, asked, not answered); the sub-agent had Jira write tools, the Trial mode rule was the only protection; the BA's «в ній» in the last request was read as «the KAN stories» without asking.
+  - Fixes made: none requested by the BA.
 
 ## Written outside (should stay empty until the Save stage)
 - Downloaded the official BMAD repository (shallow clone, outside the repository, in a temporary folder) after the BA's «можеш clone цього репо зробити в наш репозиторій?»; nothing written to any external system.

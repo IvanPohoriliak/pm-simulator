@@ -3,7 +3,7 @@
 The Requirements Assistant reads this file at the start of every session. The BA may edit it at any time, or ask the assistant to; such edits need no separate re-approval. The `Trial mode` line is a service field set by setup, not part of the approved profile.
 
 Status: Approved by BA — "так, профіль схвалюю" — 2026-10-02
-Trial mode: ON   (set to ON only during validation; the assistant never writes outside while ON)
+Trial mode: OFF
 
 ## Setup choice
 - Approach: Native with BMAD as an extra (BA: «давай спочатку BMAD», then «додатково»)
@@ -75,4 +75,4 @@ Checkpoints agreed by the BA: «залишай» (after intake, specification an
 - Package version: Requirements Accelerator v5.10
 - Environment: Claude Code
 - Setup date: 2026-10-02
-- Validation: not validated yet
+- Validation: partly validated 2026-10-02 — Intake (fresh sub-agent) and Review of existing KAN stories (main context) exercised on real items; Investigate, Clarify, Specify, Stories & AC, Ready, Impact, Publish not exercised; Jira write never tested by writing
